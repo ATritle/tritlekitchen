@@ -530,13 +530,25 @@ function getCategory(item) {
 }
 
 fetch("recipes.json")
-  .then(res=>res.json())
-  .then(data=>{
-    Object.values(data).forEach(category =>
-      Object.values(category).forEach(subCat =>
-        subCat.forEach(recipe => allRecipes.push(recipe))
-      )
-    );
+  .then(res => res.json())
+  .then(data => {
+
+    Object.values(data).forEach(category => {
+
+      // If this category is directly an array (like Soups)
+      if (Array.isArray(category)) {
+        category.forEach(recipe => allRecipes.push(recipe));
+      } 
+      else {
+        // Otherwise it contains subcategories
+        Object.values(category).forEach(subCat => {
+          if (Array.isArray(subCat)) {
+            subCat.forEach(recipe => allRecipes.push(recipe));
+          }
+        });
+      }
+
+    });
 
     allRecipes.sort((a,b)=>a.name.localeCompare(b.name));
 
@@ -561,6 +573,7 @@ fetch("recipes.json")
 
     loadWeek();
   });
+
 
 </script>
 
