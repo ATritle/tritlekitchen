@@ -127,6 +127,37 @@
   },
 
   "Dinner": {
+    "Mexican Meals": [
+      {
+        "name": "Birria Tacos",
+        "url": "/recipe-selector-site/recipes/birria-tacos.html",
+        "ingredients": [
+          { "amount": 3.5, "unit": "LBS", "item": "chuck roast" },
+          { "amount": 3, "unit": "each", "item": "onion" },
+          { "amount": 4, "unit": "each", "item": "roma tomato" },
+          { "amount": 5, "unit": "cloves", "item": "garlic" },
+          { "amount": 2, "unit": "each", "item": "dried ancho chile pepper" },
+          { "amount": 2, "unit": "each", "item": "dried guajillo chile pepper" },
+          { "amount": 3, "unit": "each", "item": "bay leaf" },
+          { "amount": 2, "unit": "dashes", "item": "ground cinnamon" },
+          { "amount": 32, "unit": "TBSP", "item": "whole black peppercorn" },
+          { "amount": 10.75, "unit": "TBSP", "item": "apple cider vinegar" },
+          { "amount": 1.5, "unit": "each", "item": "water" },
+          { "amount": 3, "unit": "dashes", "item": "salt" },
+          { "amount": 2, "unit": "TBSP", "item": "cumin" },
+          { "amount": 32, "unit": "TBSP", "item": "better than bouillon beef" },
+          { "amount": 10.75, "unit": "TBSP", "item": "taco seasoning" },
+          { "amount": 32, "unit": "tsp", "item": "dried oregano" },
+          { "amount": 10.75, "unit": "tsp", "item": "garlic powder" },
+          { "amount": 1, "unit": "each", "item": "red onion" },
+          { "amount": 1, "unit": "each", "item": "cilantro" },
+          { "amount": 1, "unit": "each", "item": "flour tortillas" },
+          { "amount": 1, "unit": "each", "item": "chinuahua cheese" },
+          { "amount": 2, "unit": "each", "item": "lime" }
+        ]
+      }
+    ],
+
     "American Meals": [
       {
         "name": "Bacon Cheeseburger Tatortot Casserole",
@@ -199,6 +230,74 @@
     ]
   },
 
+    "Soups": [
+            {
+        "name": "Chili",
+        "url": "/recipe-selector-site/recipes/chili.html",
+        "ingredients": [
+          { "amount": 2, "unit": "LBS", "item": "ground beef or pork" },
+          { "amount": 16, "unit": "oz", "item": "onion" },
+          { "amount": 20, "unit": "oz", "item": "rotel" },
+          { "amount": 1, "unit": "TBSP", "item": "black beans" },
+          { "amount": 4, "unit": "cup", "item": "kidney beans" },
+          { "amount": 4, "unit": "oz", "item": "chili powder" },
+          { "amount": 15, "unit": "oz", "item": "beef stock" },
+          { "amount": 1, "unit": "each", "item": "cheddar cheese" },
+          { "amount": 1, "unit": "each", "item": "cilantro" }
+        ]
+      },
+      {
+        "name": "Taco Soup",
+        "url": "/recipe-selector-site/recipes/taco-soup.html",
+        "ingredients": [
+          { "amount": 2, "unit": "LBS", "item": "ground beef" },
+          { "amount": 16, "unit": "oz", "item": "cream cheese" },
+          { "amount": 20, "unit": "oz", "item": "rotel" },
+          { "amount": 1, "unit": "TBSP", "item": "taco seasoning" },
+          { "amount": 4, "unit": "cup", "item": "chicken broth" },
+          { "amount": 4, "unit": "oz", "item": "jalapenos or poblanos" },
+          { "amount": 15, "unit": "oz", "item": "black beans" },
+          { "amount": 1, "unit": "each", "item": "cheddar cheese" },
+          { "amount": 1, "unit": "each", "item": "cilantro" }
+        ]
+      },
+      {
+        "name": "Potato Soup",
+        "url": "/recipe-selector-site/recipes/potato-soup.html",
+        "ingredients": [
+          { "amount": 3, "unit": "each", "item": "russet potato" },
+          { "amount": 0.5, "unit": "each", "item": "onion" },
+          { "amount": 2, "unit": "cup", "item": "chicken broth" },
+          { "amount": 1, "unit": "cup", "item": "milk" },
+          { "amount": 0.5, "unit": "cup", "item": "heavy whipping cream" },
+          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 1, "unit": "dashes", "item": "pepper" },
+          { "amount": 0.25, "unit": "tsp", "item": "garlic powder" },
+          { "amount": 0.25, "unit": "tsp", "item": "paprika" },
+          { "amount": 1, "unit": "cup", "item": "cheddar cheese" },
+          { "amount": 0.3, "unit": "cup", "item": "sour cream" },
+          { "amount": 0.5, "unit": "LBS", "item": "bacon" }
+        ]
+      },
+    {
+        "name": "French Onion Soup",
+        "url": "/recipe-selector-site/recipes/french-onion-soup.html",
+        "ingredients": [
+          { "amount": 6, "unit": "cup", "item": "onion" },
+          { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
+          { "amount": 2, "unit": "TBSP", "item": "olive oil" },
+          { "amount": 6, "unit": "each", "item": "fresh thyme" },
+          { "amount": 1, "unit": "each", "item": "bay leaf" },
+          { "amount": 0.5, "unit": "cup", "item": "white wine" },
+          { "amount": 4, "unit": "cup", "item": "beef broth" },
+          { "amount": 1.5, "unit": "cup", "item": "gruyere cheese" },
+          { "amount": 2, "unit": "TBSP", "item": "worcestershire sauce" },
+          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 1, "unit": "dashes", "item": "pepper" }
+        ]
+      }
+    ],
+
   "Desserts": {
     "Cake": [
       {
@@ -234,3 +333,4 @@
   }
 
 }
+
