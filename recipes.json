@@ -388,8 +388,9 @@
           { "amount": 1, "unit": "each", "item": "coconut flakes" }
         ]
       }
-    ],
-
+    ]
+},
+  
   "Breakfast": {
     "Skillet": [
       {
@@ -443,4 +444,5 @@
     ]
   }
 }
+
 
