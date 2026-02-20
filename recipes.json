@@ -87,8 +87,41 @@
     ],
 
     "Breads": [
-      { "name": "Banana Bread Grandma Peggy", "url": "/recipe-selector-site/recipes/banana-bread-grandma-peggy.html" },
-      { "name": "Banana Bread Bites", "url": "/recipe-selector-site/recipes/banana-bread-bites.html" }
+      {
+        "name": "Banana Bread Grandma Peggy",
+        "url": "/recipe-selector-site/recipes/banana-bread-grandma-peggy.html",
+        "ingredients": [
+          { "amount": 0.75, "unit": "cup", "item": "butter" },
+          { "amount": 0.5, "unit": "cup", "item": "sugar" },
+          { "amount": 4, "unit": "each", "item": "bananas" },
+          { "amount": 2, "unit": "each", "item": "egg" },
+          { "amount": 1, "unit": "tsp", "item": "vanilla extract" },
+          { "amount": 2, "unit": "cup", "item": "flour" },
+          { "amount": 1, "unit": "tsp", "item": "baking soda" },
+          { "amount": 0.5, "unit": "tsp", "item": "salt" },
+          { "amount": 0.5, "unit": "cup", "item": "buttermilk" },
+          { "amount": 1, "unit": "each", "item": "chocolate chips" },
+          { "amount": 1, "unit": "each", "item": "walnuts" }
+        ]
+      },
+      {
+        "name": "Banana Bread Bites",
+        "url": "/recipe-selector-site/recipes/banana-bread-bites.html",
+        "ingredients": [
+          { "amount": 2, "unit": "each", "item": "bananas" },
+          { "amount": 1, "unit": "tsp", "item": "baking soda" },
+          { "amount": 0.5, "unit": "tsp", "item": "baking powder" },
+          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 2, "unit": "TBSP", "item": "milled flaxseed" },
+          { "amount": 1, "unit": "tsp", "item": "vanilla extract" },
+          { "amount": 2, "unit": "TBSP", "item": "almond butter" },
+          { "amount": 2, "unit": "TBSP", "item": "agave syrup" },
+          { "amount": 2, "unit": "TBSP", "item": "avacado oil" },
+          { "amount": 1, "unit": "cup", "item": "flour" },
+          { "amount": 0.75, "unit": "cup", "item": "rolled quick oats" },
+          { "amount": 0.5, "unit": "cup", "item": "mini chocolate chips" }
+        ]
+      }
     ],
 
     "Sides": [
@@ -317,22 +350,77 @@
     ]
   },
 
+    "Misc.": [
+      {
+        "name": "Avocado Fudge",
+        "url": "/recipe-selector-site/recipes/avocado-fudge.html",
+        "ingredients": [
+          { "amount": 2, "unit": "each", "item": "avocado" },
+          { "amount": 1, "unit": "each", "item": "ripe bananas" },
+          { "amount": 0.25, "unit": "cup", "item": "honey" },
+          { "amount": 0.66, "unit": "cup", "item": "coconut oil" },
+          { "amount": 1, "unit": "each", "item": "lemon" },
+          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 1, "unit": "each", "item": "walnuts" },
+          { "amount": 1, "unit": "each", "item": "coconut flakes" }
+        ]
+      }
+    ],
+
   "Breakfast": {
     "Skillet": [
-      { "name": "Dutch Baby", "url": "/recipe-selector-site/recipes/dutch-baby-regular.html" }
+      {
+        "name": "Dutch Baby",
+        "url": "/recipe-selector-site/recipes/dutch-baby-regular.html",
+        "ingredients": [
+          { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
+          { "amount": 3, "unit": "each", "item": "egg" },
+          { "amount": 0.5, "unit": "cup", "item": "milk" },
+          { "amount": 0.5, "unit": "TBSP", "item": "milk" },
+          { "amount": 0.5, "unit": "cup", "item": "gluten-free flour" },
+          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 1, "unit": "dashes", "item": "vanilla extract" },
+          { "amount": 1, "unit": "dashes", "item": "cinnamon" },
+          { "amount": 1, "unit": "dashes", "item": "nutmeg" }
+        ]
+      }
     ],
+
     "Baking": [
-      { "name": "RECIPE GOES HERE", "url": "/recipe-selector-site/recipes/template.html" }
+      {
+        "name": "RECIPE GOES HERE",
+        "url": "/recipe-selector-site/recipes/template.html" 
+        "ingredients": [
+          { "amount": 0, "unit": "each", "item": "ingredient" },
+          { "amount": 0, "unit": "each", "item": "ingredient" }
+        ]
+      }
     ],
+
     "Overnight Oats": [
-      { "name": "RECIPE GOES HERE", "url": "/recipe-selector-site/recipes/template.html" }
+      {
+        "name": "RECIPE GOES HERE",
+        "url": "/recipe-selector-site/recipes/template.html" 
+        "ingredients": [
+          { "amount": 0, "unit": "each", "item": "ingredient" },
+          { "amount": 0, "unit": "each", "item": "ingredient" }
+        ]
+      }
     ],
+
     "Casserole": [
-      { "name": "Sausage Egg Bake", "url": "/recipe-selector-site/recipes/sausage-egg-bake.html" }
-    ]
-  }
+      {
+        "name": "RECIPE GOES HERE",
+        "url": "/recipe-selector-site/recipes/template.html" 
+        "ingredients": [
+          { "amount": 0, "unit": "each", "item": "ingredient" },
+          { "amount": 0, "unit": "each", "item": "ingredient" }
+        ]
+      }
+    ],
 
 }
+
 
 
 
