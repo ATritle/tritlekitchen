@@ -356,13 +356,24 @@ day.addEventListener("drop", e => {
 
     const dragged = window.currentDraggedChip;
 
-    // If dragged from recipePool (search results)
+    // If dragged from recipe pool
     if (recipePool.contains(dragged)) {
-      dragged.remove();
-    }
 
-    // If dragged from another day, it will auto-move
-    day.appendChild(dragged);
+      // Get recipe data
+      const data = JSON.parse(
+        e.dataTransfer.getData("text/plain")
+      );
+
+      // Remove pool chip
+      dragged.remove();
+
+      // Create proper calendar chip (with X)
+      createRecipeChip(day, data);
+
+    } else {
+      // If dragged from another day, just move it
+      day.appendChild(dragged);
+    }
 
     window.currentDraggedChip = null;
     saveWeek();
