@@ -349,18 +349,23 @@ title.innerHTML = `
 
     day.addEventListener("dragover", e => e.preventDefault());
 
-    day.addEventListener("drop", e => {
-      e.preventDefault();
-      const data = JSON.parse(e.dataTransfer.getData("text/plain"));
+day.addEventListener("drop", e => {
+  e.preventDefault();
+  const data = JSON.parse(e.dataTransfer.getData("text/plain"));
 
-      if (window.currentDraggedChip) {
-        window.currentDraggedChip.remove();
-        window.currentDraggedChip = null;
-      }
+  // Only remove if dragged from recipe pool
+  if (
+    window.currentDraggedChip &&
+    recipePool.contains(window.currentDraggedChip)
+  ) {
+    window.currentDraggedChip.remove();
+  }
 
-      createRecipeChip(day, data);
-      saveWeek();
-    });
+  window.currentDraggedChip = null;
+
+  createRecipeChip(day, data);
+  saveWeek();
+});
 
     if (saved[i]) {
       saved[i].forEach(recipe => {
