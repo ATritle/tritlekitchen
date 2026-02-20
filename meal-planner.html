@@ -351,18 +351,21 @@ title.innerHTML = `
 
 day.addEventListener("drop", e => {
   e.preventDefault();
-  const data = JSON.parse(e.dataTransfer.getData("text/plain"));
 
-  // Only remove if dragged from recipe pool
-  if (
-    window.currentDraggedChip &&
-    recipePool.contains(window.currentDraggedChip)
-  ) {
-    window.currentDraggedChip.remove();
+  // If dragging an existing chip (from pool OR another day)
+  if (window.currentDraggedChip) {
+
+    // Move the existing chip to this day
+    day.appendChild(window.currentDraggedChip);
+
+    window.currentDraggedChip = null;
+
+    saveWeek();
+    return;
   }
 
-  window.currentDraggedChip = null;
-
+  // Fallback (shouldn't normally happen)
+  const data = JSON.parse(e.dataTransfer.getData("text/plain"));
   createRecipeChip(day, data);
   saveWeek();
 });
