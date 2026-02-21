@@ -143,34 +143,66 @@ recipe.addEventListener("change", () => {
 
     }
         function setupSearch(data) {
-      const searchInput = document.getElementById("recipeSearch");
-      const results = document.getElementById("searchResults");
+  const searchInput = document.getElementById("recipeSearch");
+  const results = document.getElementById("searchResults");
+  const ingredientInput = document.getElementById("ingredientSearch");
+  const ingredientResults = document.getElementById("ingredientResults");
 
-      const allRecipes = [];
+  const allRecipes = [];
 
-      Object.values(data).forEach(category =>
-        Object.values(category).forEach(subCat =>
-          subCat.forEach(recipe => allRecipes.push(recipe))
-        )
-      );
+  Object.values(data).forEach(category =>
+    Object.values(category).forEach(subCat =>
+      subCat.forEach(recipe => allRecipes.push(recipe))
+    )
+  );
 
-      searchInput.addEventListener("input", () => {
-        const term = searchInput.value.toLowerCase();
-        results.innerHTML = "";
+  // 🔎 NAME SEARCH
+  searchInput.addEventListener("input", () => {
+    const term = searchInput.value.toLowerCase();
+    results.innerHTML = "";
 
-        if (term.length < 2) return;
+    if (term.length < 2) return;
 
-        allRecipes
-          .filter(r => r.name.toLowerCase().includes(term))
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .forEach(r => {
-            const li = document.createElement("li");
-            li.textContent = r.name;
-            li.onclick = () => window.open(r.url, "_blank");
-            results.appendChild(li);
-          });
+    ingredientInput.value = "";
+    ingredientResults.innerHTML = "";
+    
+    allRecipes
+      .filter(r => r.name.toLowerCase().includes(term))
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .forEach(r => {
+        const li = document.createElement("li");
+        li.textContent = r.name;
+        li.onclick = () => window.open(r.url, "_blank");
+        results.appendChild(li);
       });
-    }
+  });
+
+  // 🧄 INGREDIENT SEARCH
+  ingredientInput.addEventListener("input", () => {
+    const term = ingredientInput.value.toLowerCase();
+    ingredientResults.innerHTML = "";
+
+    if (term.length < 2) return;
+
+    searchInput.value = "";
+    results.innerHTML = "";
+    
+    allRecipes
+      .filter(recipe =>
+        recipe.ingredients &&
+        recipe.ingredients.some(ing =>
+          ing.item.toLowerCase().includes(term)
+        )
+      )
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .forEach(recipe => {
+        const li = document.createElement("li");
+        li.textContent = recipe.name;
+        li.onclick = () => window.open(recipe.url, "_blank");
+        ingredientResults.appendChild(li);
+      });
+  });
+}
 
   </script>
 <script>
@@ -201,6 +233,7 @@ if ("serviceWorker" in navigator) {
 
 </body>
 </html>
+
 
 
 
