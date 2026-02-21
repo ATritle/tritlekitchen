@@ -221,8 +221,12 @@ select:focus {
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
-  opacity: 0.6;
+  opacity: 0.5;
   pointer-events: none;
+  transition: 
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 
 /* Push input text right so it doesn’t overlap icon */
@@ -231,21 +235,14 @@ select:focus {
   padding-left: 55px;
 }
 
+/* 🔥 Animate icon when input is focused */
+.search-wrapper:focus-within .search-icon {
+  opacity: 1;
+  transform: translateY(-50%) translateX(6px);
+  color: #0a84ff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Optional subtle glow */
+.search-wrapper:focus-within {
+  transition: box-shadow 0.25s ease;
+}
