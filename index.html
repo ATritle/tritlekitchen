@@ -28,6 +28,8 @@
 </head>
 <body>
 
+<body>
+
 <div class="hero">
   <h1>Select a Recipe</h1>
 
@@ -40,14 +42,13 @@
   <select id="subCategory" disabled>
     <option value="">Select Sub-Category</option>
   </select>
-</div>
 
-<!-- Recipe -->
-<select id="recipe" disabled>
-  <option value="">Select Recipe</option>
-</select>
-  
-    <!-- Recipe Search -->
+  <!-- Recipe -->
+  <select id="recipe" disabled>
+    <option value="">Select Recipe</option>
+  </select>
+
+  <!-- 🔎 Recipe Name Search -->
   <input
     type="search"
     id="recipeSearch"
@@ -55,24 +56,26 @@
     autocomplete="off"
   />
   <ul id="searchResults" class="searchResults"></ul>
-  <ul id="ingredientResults" class="searchResults"></ul>
-  
+
+  <!-- 🧄 Ingredient Search -->
   <input
-  type="search"
-  id="ingredientSearch"
-  placeholder="Search by ingredient..."
-  autocomplete="off"
-/>
-  
+    type="search"
+    id="ingredientSearch"
+    placeholder="Search by ingredient..."
+    autocomplete="off"
+  />
+  <ul id="ingredientResults" class="searchResults"></ul>
+
+</div>
+
 <div class="app-description">
   <p>Choose a category, select a recipe, or use search to quickly find what you want to cook.</p>
   <p>Built for tablet use in the kitchen, with simple navigation and easy-to-read layouts.</p>
   <p>
-  <a href="meal-planner.html" class="planner-link">
-    CHECK OUT THE NEW WEEKLY MEAL PLANNER HERE!
-  </a>
-</p>
-
+    <a href="meal-planner.html" class="planner-link">
+      CHECK OUT THE NEW WEEKLY MEAL PLANNER HERE!
+    </a>
+  </p>
 </div>
 
   <script>
@@ -246,6 +249,7 @@ if ("serviceWorker" in navigator) {
 
 </body>
 </html>
+
 
 
 
