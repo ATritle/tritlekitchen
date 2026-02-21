@@ -1,12 +1,12 @@
 const CACHE_NAME = "recipe-app-v1";
 
 const CORE_ASSETS = [
-  "/recipe-selector-site/",
-  "/recipe-selector-site/index.html",
-  "/recipe-selector-site/css/style.css",
-  "/recipe-selector-site/recipes.json",
-  "/recipe-selector-site/apple-touch-icon.png",
-  "/recipe-selector-site/favicon.png"
+  "/tritlekitchen/",
+  "/tritlekitchen/index.html",
+  "/tritlekitchen/css/style.css",
+  "/tritlekitchen/recipes.json",
+  "/tritlekitchen/apple-touch-icon.png",
+  "/tritlekitchen/favicon.png"
 ];
 
 // Install: cache core files
@@ -41,7 +41,7 @@ self.addEventListener("fetch", event => {
         // Cache PDFs and pages when fetched
         if (
           event.request.url.endsWith(".pdf") ||
-          event.request.url.includes("/recipe-selector-site/")
+          event.request.url.includes("/tritlekitchen/")
         ) {
           return caches.open(CACHE_NAME).then(cache => {
             cache.put(event.request, networkResponse.clone());
