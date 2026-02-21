@@ -21,7 +21,7 @@ select,
   min-height: 260px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 
-  background-image: url("/recipe-selector-site/images/recipes-home.png");
+  background-image: url("/tritlekitchen/images/recipes-home.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -189,6 +189,7 @@ select:focus {
 .planner-link:hover {
   text-decoration: underline;
 }
+
 
 
 
