@@ -3,7 +3,7 @@
     "Alcoholic": [
       {
         "name": "Apple Cider Honey Whiskey",
-        "url": "/recipe-selector-site/recipes/apple-cider-honey-whiskey.html",
+        "url": "/tritlekitchen/recipes/apple-cider-honey-whiskey.html",
         "ingredients": [
           { "amount": 6, "unit": "cup", "item": "apple cider" },
           { "amount": 2, "unit": "cup", "item": "honey whiskey" },
@@ -15,10 +15,10 @@
       }
     ],
     "Non-Alcoholic": [
-      { "name": "RECIPE GOES HERE", "url": "/recipe-selector-site/recipes/template.html" }
+      { "name": "RECIPE GOES HERE", "url": "/tritlekitchen/recipes/template.html" }
     ],
     "Shots": [
-      { "name": "RECIPE GOES HERE", "url": "/recipe-selector-site/recipes/template.html" }
+      { "name": "RECIPE GOES HERE", "url": "/tritlekitchen/recipes/template.html" }
     ]
   },
 
@@ -26,7 +26,7 @@
     "Dips": [
       {
         "name": "Bagel Dip",
-        "url": "/recipe-selector-site/recipes/bagel-dip.html",
+        "url": "/tritlekitchen/recipes/bagel-dip.html",
         "ingredients": [
           { "amount": 3, "unit": "slices", "item": "dried beef" },
           { "amount": 2, "unit": "cup", "item": "mayo" },
@@ -38,7 +38,7 @@
       },
       {
         "name": "Bacon Dip",
-        "url": "/recipe-selector-site/recipes/bacon-dip.html",
+        "url": "/tritlekitchen/recipes/bacon-dip.html",
         "ingredients": [
           { "amount": 8, "unit": "slices", "item": "bacon" },
           { "amount": 1, "unit": "cup", "item": "mayo" },
@@ -53,7 +53,7 @@
       },
       {
         "name": "Buffalo Chicken Dip",
-        "url": "/recipe-selector-site/recipes/buffalo-chicken-dip.html",
+        "url": "/tritlekitchen/recipes/buffalo-chicken-dip.html",
         "ingredients": [
           { "amount": 25, "unit": "oz", "item": "canned chicken" },
           { "amount": 1, "unit": "cup", "item": "ranch" },
@@ -64,7 +64,7 @@
       },
       {
         "name": "White Queso",
-        "url": "/recipe-selector-site/recipes/white-queso.html",
+        "url": "/tritlekitchen/recipes/white-queso.html",
         "ingredients": [
           { "amount": 1, "unit": "LBS", "item": "white american cheese" },
           { "amount": 5, "unit": "oz", "item": "evaporated milk" },
@@ -79,17 +79,17 @@
     ],
 
     "Sauces": [
-      { "name": "RECIPE GOES HERE", "url": "/recipe-selector-site/recipes/template.html" }
+      { "name": "RECIPE GOES HERE", "url": "/tritlekitchen/recipes/template.html" }
     ],
 
     "Dressings": [
-      { "name": "RECIPE GOES HERE", "url": "/recipe-selector-site/recipes/template.html" }
+      { "name": "RECIPE GOES HERE", "url": "/tritlekitchen/recipes/template.html" }
     ],
 
     "Breads": [
       {
         "name": "Banana Bread Grandma Peggy",
-        "url": "/recipe-selector-site/recipes/banana-bread-grandma-peggy.html",
+        "url": "/tritlekitchen/recipes/banana-bread-grandma-peggy.html",
         "ingredients": [
           { "amount": 0.75, "unit": "cup", "item": "butter" },
           { "amount": 0.5, "unit": "cup", "item": "sugar" },
@@ -106,7 +106,7 @@
       },
       {
         "name": "Banana Bread Bites",
-        "url": "/recipe-selector-site/recipes/banana-bread-bites.html",
+        "url": "/tritlekitchen/recipes/banana-bread-bites.html",
         "ingredients": [
           { "amount": 2, "unit": "each", "item": "bananas" },
           { "amount": 1, "unit": "tsp", "item": "baking soda" },
@@ -127,7 +127,7 @@
     "Sides": [
       {
         "name": "Applesauce Grandma Peggy",
-        "url": "/recipe-selector-site/recipes/applesauce-grandma-peggy.html",
+        "url": "/tritlekitchen/recipes/applesauce-grandma-peggy.html",
         "ingredients": [
           { "amount": 8, "unit": "cup", "item": "granny smith apples" },
           { "amount": 1, "unit": "cup", "item": "water" },
@@ -140,7 +140,7 @@
       },
       {
         "name": "Avocado Chips Keto",
-        "url": "/recipe-selector-site/recipes/avocado-chips-keto.html",
+        "url": "/tritlekitchen/recipes/avocado-chips-keto.html",
         "ingredients": [
           { "amount": 1, "unit": "each", "item": "avocado" },
           { "amount": 0.25, "unit": "cup", "item": "parmesan cheese" },
@@ -152,10 +152,10 @@
     ],
 
     "Misc.": [
-      { "name": "Almond Flour", "url": "/recipe-selector-site/recipes/almond-flour.html" },
-      { "name": "Almond Milk", "url": "/recipe-selector-site/recipes/almond-milk.html" },
-      { "name": "Restaurant", "url": "/recipe-selector-site/recipes/restaurant.html" },
-      { "name": "Leftovers", "url": "/recipe-selector-site/recipes/leftovers.html" }
+      { "name": "Almond Flour", "url": "/tritlekitchen/recipes/almond-flour.html" },
+      { "name": "Almond Milk", "url": "/tritlekitchen/recipes/almond-milk.html" },
+      { "name": "Restaurant", "url": "/tritlekitchen/recipes/restaurant.html" },
+      { "name": "Leftovers", "url": "/tritlekitchen/recipes/leftovers.html" }
     ]
   },
 
@@ -163,7 +163,7 @@
     "Mexican Meals": [
       {
         "name": "Birria Tacos",
-        "url": "/recipe-selector-site/recipes/birria-tacos.html",
+        "url": "/tritlekitchen/recipes/birria-tacos.html",
         "ingredients": [
           { "amount": 3.5, "unit": "LBS", "item": "beef chuck roast" },
           { "amount": 3, "unit": "each", "item": "onion" },
@@ -194,7 +194,7 @@
     "American Meals": [
       {
         "name": "Bacon Cheeseburger Tatortot Casserole",
-        "url": "/recipe-selector-site/recipes/bacon-cheeseburger-tatortot-casserole.html",
+        "url": "/tritlekitchen/recipes/bacon-cheeseburger-tatortot-casserole.html",
         "ingredients": [
           { "amount": 1.5, "unit": "LBS", "item": "ground beef" },
           { "amount": 3, "unit": "oz", "item": "bacon bits (black label)" },
@@ -209,7 +209,7 @@
     "Mediterranean Meals": [
       {
         "name": "Chicken Gyro Bowl",
-        "url": "/recipe-selector-site/recipes/chicken-gyro-bowl.html",
+        "url": "/tritlekitchen/recipes/chicken-gyro-bowl.html",
         "ingredients": [
           { "amount": 16, "unit": "oz", "item": "chicken" },
           { "amount": 0.5, "unit": "each", "item": "red onion" },
@@ -232,7 +232,7 @@
     "Asian Meals": [
       {
         "name": "Korean Beef",
-        "url": "/recipe-selector-site/recipes/korean-beef.html",
+        "url": "/tritlekitchen/recipes/korean-beef.html",
         "ingredients": [
           { "amount": 1.5, "unit": "LBS", "item": "flank steak" },
           { "amount": 0.25, "unit": "cup", "item": "cornstarch" },
@@ -249,7 +249,7 @@
       },
       {
         "name": "Thai Chicken Lettuce Wrap",
-        "url": "/recipe-selector-site/recipes/thai-chicken-lettuce-wrap.html",
+        "url": "/tritlekitchen/recipes/thai-chicken-lettuce-wrap.html",
         "ingredients": [
           { "amount": 1, "unit": "tsp", "item": "sesame oil" },
           { "amount": 2, "unit": "clove", "item": "garlic" },
@@ -273,7 +273,7 @@
     "Italian Meals": [
       {
         "name": "Balls of Meat",
-        "url": "/recipe-selector-site/recipes/balls-of-meat.html",
+        "url": "/tritlekitchen/recipes/balls-of-meat.html",
         "ingredients": [
           { "amount": 2, "unit": "cup", "item": "ketchup" },
           { "amount": 2, "unit": "cup", "item": "brown sugar" },
@@ -288,7 +288,7 @@
     "Soups": [
             {
         "name": "Chili",
-        "url": "/recipe-selector-site/recipes/chili.html",
+        "url": "/tritlekitchen/recipes/chili.html",
         "ingredients": [
           { "amount": 2, "unit": "LBS", "item": "ground beef or pork" },
           { "amount": 16, "unit": "oz", "item": "onion" },
@@ -303,7 +303,7 @@
       },
       {
         "name": "Taco Soup",
-        "url": "/recipe-selector-site/recipes/taco-soup.html",
+        "url": "/tritlekitchen/recipes/taco-soup.html",
         "ingredients": [
           { "amount": 2, "unit": "LBS", "item": "ground beef" },
           { "amount": 16, "unit": "oz", "item": "cream cheese" },
@@ -318,7 +318,7 @@
       },
       {
         "name": "Potato Soup",
-        "url": "/recipe-selector-site/recipes/potato-soup.html",
+        "url": "/tritlekitchen/recipes/potato-soup.html",
         "ingredients": [
           { "amount": 3, "unit": "each", "item": "russet potato" },
           { "amount": 0.5, "unit": "each", "item": "onion" },
@@ -336,7 +336,7 @@
       },
     {
         "name": "French Onion Soup",
-        "url": "/recipe-selector-site/recipes/french-onion-soup.html",
+        "url": "/tritlekitchen/recipes/french-onion-soup.html",
         "ingredients": [
           { "amount": 6, "unit": "cup", "item": "onion" },
           { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
@@ -358,7 +358,7 @@
     "Cake": [
       {
         "name": "Banana Greek Yogurt Muffins",
-        "url": "/recipe-selector-site/recipes/banana-greek-yogurt-muffins.html",
+        "url": "/tritlekitchen/recipes/banana-greek-yogurt-muffins.html",
         "ingredients": [
           { "amount": 2, "unit": "each", "item": "ripe bananas" },
           { "amount": 1, "unit": "cup", "item": "greek yogurt" },
@@ -374,7 +374,7 @@
     "Bars": [
       {
         "name": "Avocado Fudge",
-        "url": "/recipe-selector-site/recipes/avocado-fudge.html",
+        "url": "/tritlekitchen/recipes/avocado-fudge.html",
         "ingredients": [
           { "amount": 2, "unit": "each", "item": "avocado" },
           { "amount": 1, "unit": "each", "item": "ripe bananas" },
@@ -393,7 +393,7 @@
     "Skillet": [
       {
         "name": "Dutch Baby",
-        "url": "/recipe-selector-site/recipes/dutch-baby-regular.html",
+        "url": "/tritlekitchen/recipes/dutch-baby-regular.html",
         "ingredients": [
           { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
           { "amount": 3, "unit": "each", "item": "egg" },
@@ -411,7 +411,7 @@
     "Baking": [
       {
         "name": "RECIPE GOES HERE",
-        "url": "/recipe-selector-site/recipes/template.html", 
+        "url": "/tritlekitchen/recipes/template.html", 
         "ingredients": [
           { "amount": 0, "unit": "each", "item": "ingredient" },
           { "amount": 0, "unit": "each", "item": "ingredient" }
@@ -422,7 +422,7 @@
     "Overnight Oats": [
       {
         "name": "RECIPE GOES HERE",
-        "url": "/recipe-selector-site/recipes/template.html", 
+        "url": "/tritlekitchen/recipes/template.html", 
         "ingredients": [
           { "amount": 0, "unit": "each", "item": "ingredient" },
           { "amount": 0, "unit": "each", "item": "ingredient" }
@@ -433,7 +433,7 @@
     "Casserole": [
       {
         "name": "RECIPE GOES HERE",
-        "url": "/recipe-selector-site/recipes/template.html", 
+        "url": "/tritlekitchen/recipes/template.html", 
         "ingredients": [
           { "amount": 0, "unit": "each", "item": "ingredient" },
           { "amount": 0, "unit": "each", "item": "ingredient" }
@@ -442,5 +442,6 @@
     ]
   }
 }
+
 
 
