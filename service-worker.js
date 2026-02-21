@@ -1,4 +1,4 @@
-const CACHE_NAME = "recipe-app-v2";
+const CACHE_NAME = "recipe-app-2026-02-21";
 
 const BASE = self.location.pathname.replace("service-worker.js", "");
 
@@ -12,6 +12,8 @@ const CORE_ASSETS = [
 ];
 
 self.addEventListener("install", event => {
+  self.skipWaiting(); // 🔥 Immediately activate new SW
+
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(CORE_ASSETS))
   );
@@ -19,13 +21,16 @@ self.addEventListener("install", event => {
 
 self.addEventListener("activate", event => {
   event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(
-        keys
-          .filter(key => key !== CACHE_NAME)
-          .map(key => caches.delete(key))
+    Promise.all([
+      self.clients.claim(), // 🔥 Take control immediately
+      caches.keys().then(keys =>
+        Promise.all(
+          keys
+            .filter(key => key !== CACHE_NAME)
+            .map(key => caches.delete(key))
+        )
       )
-    )
+    ])
   );
 });
 
