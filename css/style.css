@@ -207,6 +207,29 @@ select:focus {
   text-decoration: underline;
 }
 
+/* ===== Search Wrapper ===== */
+.search-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Icon inside input */
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Push input text right so it doesn’t overlap icon */
+#recipeSearch,
+#ingredientSearch {
+  padding-left: 55px;
+}
 
 
 
