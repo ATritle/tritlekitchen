@@ -6,7 +6,12 @@ const CORE_ASSETS = [
   BASE,
   BASE + "index.html",
   BASE + "css/style.css",
-  BASE + "recipes.json",
+  BASE + "meal-planner.html",
+  BASE + "drinks.json",
+  BASE + "dinner.json",
+  BASE + "desserts.json",
+  BASE + "breakfast.json",
+  BASE + "miscellaneous.json",
   BASE + "apple-touch-icon.png",
   BASE + "favicon.png"
 ];
