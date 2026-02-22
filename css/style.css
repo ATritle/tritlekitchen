@@ -310,14 +310,15 @@ select:focus {
 
 .site-logo-wrapper {
   text-align: center;
-  margin: 40px 0 30px; /* matches previous heading spacing */
+  margin: 10px 0 10px; /* reduced from 40px */
 }
 
 .site-logo {
-  max-width: 600px;
+  max-width: 550px;
   width: 95%;
   height: auto;
   display: block;
   margin: 0 auto;
   filter: drop-shadow(0 8px 20px rgba(0,0,0,0.6));
 }
+
