@@ -85,7 +85,6 @@ select:focus {
   box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.35);
 }
 
-/* ===== Search Bar ===== */
 /* ===== Search Bars ===== */
 #recipeSearch,
 #ingredientSearch {
@@ -206,7 +205,6 @@ select:focus {
 
 .planner-link:hover {
   text-decoration: underline;
-  color: ##31C950;
 }
 
 /* ===== Search Wrapper ===== */
@@ -248,4 +246,5 @@ select:focus {
 .search-wrapper:focus-within {
   transition: box-shadow 0.25s ease;
 }
+
 
