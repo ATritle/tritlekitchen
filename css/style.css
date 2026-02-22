@@ -16,9 +16,9 @@ select,
 /* Hero background image section */
 .hero {
   max-width: 700px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  min-height: 260px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: auto; /* removed forced extra height */
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 
   background-image: url("/tritlekitchen/images/recipes-home.png");
@@ -310,7 +310,7 @@ select:focus {
 
 .site-logo-wrapper {
   text-align: center;
-  margin: 10px 0 10px; /* reduced from 40px */
+  margin: 0 0 5px 0; /* reduced from 40px */
 }
 
 .site-logo {
@@ -321,5 +321,6 @@ select:focus {
   margin: 0 auto;
   filter: drop-shadow(0 8px 20px rgba(0,0,0,0.6));
 }
+
 
 
