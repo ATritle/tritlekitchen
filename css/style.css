@@ -307,3 +307,17 @@ select:focus {
 .home-button:hover {
   background: #2a2a2a;
 }
+
+.site-logo-wrapper {
+  text-align: center;
+  margin: 40px 0 30px; /* matches previous heading spacing */
+}
+
+.site-logo {
+  max-width: 600px;
+  width: 95%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.6));
+}
