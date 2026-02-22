@@ -454,7 +454,8 @@
           { "amount": 1, "unit": "cup", "item": "blueberries" }
         ]
       }
-    ],
+    ]
+  },
   
   "Breakfast": {
     "Skillet": [
@@ -508,5 +509,4 @@
       }
     ]
   }
-}
 }
