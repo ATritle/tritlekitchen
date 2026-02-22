@@ -1,0 +1,24 @@
+{
+"Drinks": {
+    "Alcoholic": [
+      {
+        "name": "Apple Cider Honey Whiskey",
+        "url": "recipes/apple-cider-honey-whiskey.html",
+        "ingredients": [
+          { "amount": 6, "unit": "cup", "item": "apple cider" },
+          { "amount": 2, "unit": "cup", "item": "honey whiskey" },
+          { "amount": 3, "unit": "each", "item": "cinnamon stick" },
+          { "amount": 2, "unit": "each", "item": "lemons" },
+          { "amount": 0.5, "unit": "TBSP", "item": "honey" },
+          { "amount": 2, "unit": "each", "item": "apples" }
+        ]
+      }
+    ],
+    "Non-Alcoholic": [
+      { "name": "RECIPE GOES HERE", "url": "recipes/template.html" }
+    ],
+    "Shots": [
+      { "name": "RECIPE GOES HERE", "url": "recipes/template.html" }
+    ]
+  },
+}
