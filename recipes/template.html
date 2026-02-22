@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TEMPLATE</title>
+  <title>RECIPE TITLE</title>
 
   <style>
     body {
@@ -28,6 +28,22 @@
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
     }
 
+    /* Sub Title */
+    .recipe-subtitle {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #e8f1ff;
+  opacity: 0.85; /* optional softer look */
+}
+    /* Sub Title if None */
+    .recipe-subtitle:empty {
+  display: none;
+}
+    
     /* Horizontal rule under title */
     .title-rule {
       border: none;
@@ -90,6 +106,7 @@
     ol li {
       margin-bottom: 8px;
     }
+
     /* ===== Download Recipe Link ===== */
 .download-recipe {
   margin: 40px auto 20px;
@@ -104,7 +121,7 @@
   padding: 10px 16px;
   border-radius: 12px;
 }
-/* ===== Print styles (PDF / Printer) ===== */
+  /* ===== Print styles (PDF / Printer) ===== */
 @media print {
   body {
     background: #ffffff !important;
@@ -112,7 +129,6 @@
     margin: 0 !important;
     padding: 0 !important;
   }
-
 
   .recipe-title {
     color: #000000 !important;
@@ -128,30 +144,32 @@
     color: #000000 !important;
   }
 
-  /* Divider lines */
-.title-rule {
-  border-color: #000000 !important;
-}
-
+  .title-rule {
+    border-color: #000000 !important;
+  }
 
   .recipe-content::before {
     background: #000000 !important;
   }
 
-  /* Hide UI-only elements if needed later */
   .download-recipe {
     display: none;
   }
-}
-
+}  
   </style>
 </head>
 <body>
 
   <div class="recipe-title">
-    TEMPLATE
+	<!-- Recipe Title Goes Here -->
+    
   </div>
 
+  <div class="recipe-subtitle">
+    <!-- Sub Title Goes Here if there is one -->
+	  
+  </div>
+  
   <hr class="title-rule">
 
   <div class="recipe-content">
@@ -160,12 +178,14 @@
     <section>
       <h2>Ingredients:</h2>
       <ul>
-        <li>1.5 lbs ground beef</li>
-        <li>3 oz package of real bacon bits (black label)</li>
-        <li>2 cups shredded cheddar cheese</li>
-        <li>32 oz frozen tator tots</li>
-        <li>10.75 oz can condensed cream of chicken or cheddar cheese soup</li>
-        <li>16 oz sour cream</li>
+        <li>INGREDIENTS</li>
+		<li>INGREDIENTS</li>
+		<li>INGREDIENTS</li>
+		<li>INGREDIENTS</li>
+		<li>INGREDIENTS</li>
+		<li>INGREDIENTS</li>
+		<li>INGREDIENTS</li>
+        <li>INGREDIENTS</li>
       </ul>
     </section>
 
@@ -173,19 +193,14 @@
     <section>
       <h2>Directions:</h2>
       <ol>
-        <li>Preheat oven to 350°.</li>
-        <li>Spray 9x13 pan.</li>
-        <li>Cook ground beef and drain fat.</li>
-        <li>
-          In a large bowl mix cream of chicken, sour cream, bacon bits,
-          cheddar cheese, and beef. Then mix in tator tots.
-        </li>
-        <li>Spread mixture in pan and bake for 45 minutes or until bubbly.</li>
+    <li>DIRECTIONS</li>
+    <li>DIRECTIONS</li>
+    <li>DIRECTIONS</li>
       </ol>
     </section>
 
   </div>
-
+  
 <div class="download-recipe">
   <a id="downloadLink" href="#">
     ⬇️ Download this recipe (PDF)
@@ -202,10 +217,15 @@
     "/recipe-selector-site/pdfs/" + pageName;
 </script>
 
+<div class="home-button-wrapper">
+  <a href="../index.html" class="home-button">
+    🏠 HOME
+  </a>
+</div>
 	
 </body>
-</html>
 
+</html>
 
 
 
