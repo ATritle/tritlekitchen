@@ -560,52 +560,63 @@ function getCategory(item) {
   return "Other";
 }
 
-fetch("recipes.json")
-  .then(res => res.json())
-  .then(data => {
+Promise.all([
+  fetch("drinks.json").then(res => res.json()),
+  fetch("dinner.json").then(res => res.json()),
+  fetch("desserts.json").then(res => res.json()),
+  fetch("breakfast.json").then(res => res.json()),
+  fetch("miscellaneous.json").then(res => res.json())
+])
+.then(([drinks, dinner, desserts, breakfast, miscellaneous]) => {
 
-    Object.values(data).forEach(category => {
+  const data = {
+    Drinks: drinks,
+    Dinner: dinner,
+    Desserts: desserts,
+    Breakfast: breakfast,
+    Miscellaneous: miscellaneous
+  };
 
-      // If this category is directly an array (like Soups)
-      if (Array.isArray(category)) {
-        category.forEach(recipe => allRecipes.push(recipe));
-      } 
-      else {
-        // Otherwise it contains subcategories
-        Object.values(category).forEach(subCat => {
-          if (Array.isArray(subCat)) {
-            subCat.forEach(recipe => allRecipes.push(recipe));
-          }
-        });
-      }
+  Object.values(data).forEach(category => {
 
-    });
+    if (Array.isArray(category)) {
+      category.forEach(recipe => allRecipes.push(recipe));
+    } 
+    else {
+      Object.values(category).forEach(subCat => {
+        if (Array.isArray(subCat)) {
+          subCat.forEach(recipe => allRecipes.push(recipe));
+        }
+      });
+    }
 
-    allRecipes.sort((a,b)=>a.name.localeCompare(b.name));
-
-    allRecipes.forEach(r=>{
-      recipeSelect.add(new Option(r.name, r.url));
-    });
-
-    recipeSelect.addEventListener("change",()=>{
-      const selected = allRecipes.find(r=>r.url===recipeSelect.value);
-      if (selected) createDraggableChip(selected);
-      recipeSelect.value = "";
-    });
-
-plannerSearch.addEventListener("input",()=>{
-  const term = plannerSearch.value.toLowerCase();
-  recipePool.innerHTML = "";
-
-  if (term.length < 2) return;
-
-  allRecipes
-    .filter(r=>r.name.toLowerCase().includes(term))
-    .forEach(r=>createDraggableChip(r));
-});
-    
-    loadWeek();
   });
+
+  allRecipes.sort((a,b)=>a.name.localeCompare(b.name));
+
+  allRecipes.forEach(r=>{
+    recipeSelect.add(new Option(r.name, r.url));
+  });
+
+  recipeSelect.addEventListener("change",()=>{
+    const selected = allRecipes.find(r=>r.url===recipeSelect.value);
+    if (selected) createDraggableChip(selected);
+    recipeSelect.value = "";
+  });
+
+  plannerSearch.addEventListener("input",()=>{
+    const term = plannerSearch.value.toLowerCase();
+    recipePool.innerHTML = "";
+
+    if (term.length < 2) return;
+
+    allRecipes
+      .filter(r=>r.name.toLowerCase().includes(term))
+      .forEach(r=>createDraggableChip(r));
+  });
+
+  loadWeek();
+});
 
 </script>
 
