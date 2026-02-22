@@ -201,10 +201,12 @@ select:focus {
 .planner-link {
   font-weight: bold;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .planner-link:hover {
   text-decoration: underline;
+  color: ##31C950;
 }
 
 /* ===== Search Wrapper ===== */
@@ -246,3 +248,4 @@ select:focus {
 .search-wrapper:focus-within {
   transition: box-shadow 0.25s ease;
 }
+
