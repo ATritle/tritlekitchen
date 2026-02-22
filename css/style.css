@@ -1,7 +1,7 @@
 /* ===== Base Dark Theme ===== */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont;
-  padding: 40px;
+  padding: 10px;
   background: #0f0f0f;          /* Dark background */
   color: #f2f2f2;               /* Light text */
 }
@@ -50,7 +50,7 @@ select,
 /* Hero title styling */
 .hero h1 {
   font-size: 34px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   text-align: center;
   
@@ -321,4 +321,5 @@ select:focus {
   margin: 0 auto;
   filter: drop-shadow(0 8px 20px rgba(0,0,0,0.6));
 }
+
 
