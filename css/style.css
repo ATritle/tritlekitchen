@@ -197,16 +197,6 @@ select:focus {
   max-width: 50px;
 }
 
-.planner-link {
-  font-weight: bold;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.planner-link:hover {
-  text-decoration: underline;
-}
-
 /* ===== Search Wrapper ===== */
 .search-wrapper {
   position: relative;
@@ -253,9 +243,11 @@ select:focus {
   margin: 40px auto;
 }
 
-.back-button {
+/* ===== Accent Button (Reusable Blue Style) ===== */
+.accent-button {
   display: inline-block;
-  padding: 14px 24px;
+  padding: 14px 26px;
+
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -267,20 +259,25 @@ select:focus {
 
   border-radius: 14px;
 
-  transition: 
+  transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
     background 0.2s ease;
 }
 
-/* Hover effect */
-.back-button:hover {
+/* Hover */
+.accent-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(10, 132, 255, 0.45);
 }
 
-/* Click effect */
-.back-button:active {
+/* Click */
+.accent-button:active {
   transform: translateY(0px);
-  box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.35);
+  box-shadow: 0 4px 10px rgba(10, 132, 255, 0.35);
+}
+
+.button-wrapper {
+  text-align: center;
+  margin: 40px auto;
 }
