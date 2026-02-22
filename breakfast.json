@@ -1,0 +1,52 @@
+{
+    "Skillet": [
+      {
+        "name": "Dutch Baby",
+        "url": "recipes/dutch-baby-regular.html",
+        "ingredients": [
+          { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
+          { "amount": 3, "unit": "each", "item": "egg" },
+          { "amount": 0.5, "unit": "cup", "item": "milk" },
+          { "amount": 0.5, "unit": "TBSP", "item": "milk" },
+          { "amount": 0.5, "unit": "cup", "item": "gluten-free flour" },
+          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 1, "unit": "dashes", "item": "vanilla extract" },
+          { "amount": 1, "unit": "dashes", "item": "cinnamon" },
+          { "amount": 1, "unit": "dashes", "item": "nutmeg" }
+        ]
+      }
+    ],
+
+    "Baking": [
+      {
+        "name": "RECIPE GOES HERE",
+        "url": "recipes/template.html", 
+        "ingredients": [
+          { "amount": 0, "unit": "each", "item": "ingredient" },
+          { "amount": 0, "unit": "each", "item": "ingredient" }
+        ]
+      }
+    ],
+
+    "Overnight Oats": [
+      {
+        "name": "RECIPE GOES HERE",
+        "url": "recipes/template.html", 
+        "ingredients": [
+          { "amount": 0, "unit": "each", "item": "ingredient" },
+          { "amount": 0, "unit": "each", "item": "ingredient" }
+        ]
+      }
+    ],
+
+    "Casserole": [
+      {
+        "name": "RECIPE GOES HERE",
+        "url": "recipes/template.html", 
+        "ingredients": [
+          { "amount": 0, "unit": "each", "item": "ingredient" },
+          { "amount": 0, "unit": "each", "item": "ingredient" }
+        ]
+      }
+    ]
+  }
