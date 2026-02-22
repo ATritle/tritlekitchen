@@ -83,7 +83,22 @@
     ],
 
     "Dressings": [
-      { "name": "RECIPE GOES HERE", "url": "recipes/template.html" }
+      {
+        "name": "Caesar Dressing",
+        "url": "recipes/caeser-dressing.html"
+              "ingredients": [
+          { "amount": 2, "unit": "cloves", "item": "garlic" },
+          { "amount": 0.5, "unit": "tsp", "item": "salt" },
+          { "amount": 1, "unit": "TBSP", "item": "mayo" },
+          { "amount": 2, "unit": "TBSP", "item": "lemon juice" },
+          { "amount": 1, "unit": "tsp", "item": "worcestershire sauce" },
+          { "amount": 3, "unit": "each", "item": "anchovy" },
+          { "amount": 1, "unit": "pinch", "item": "salt" },
+          { "amount": 1, "unit": "pinch", "item": "pepper" },
+          { "amount": 0.5, "unit": "cup", "item": "extra virgin olive oil" },
+          { "amount": 0.25, "unit": "cup", "item": "parmesan cheese" }
+        ]
+      }
     ],
 
     "Breads": [
@@ -111,7 +126,7 @@
           { "amount": 2, "unit": "each", "item": "bananas" },
           { "amount": 1, "unit": "tsp", "item": "baking soda" },
           { "amount": 0.5, "unit": "tsp", "item": "baking powder" },
-          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 1, "unit": "pinch", "item": "salt" },
           { "amount": 2, "unit": "TBSP", "item": "milled flaxseed" },
           { "amount": 1, "unit": "tsp", "item": "vanilla extract" },
           { "amount": 2, "unit": "TBSP", "item": "almond butter" },
@@ -154,6 +169,19 @@
     "Misc.": [
       { "name": "Almond Flour", "url": "recipes/almond-flour.html" },
       { "name": "Almond Milk", "url": "recipes/almond-milk.html" },
+      {
+        "name": "Bourbon Butter",
+        "url": "recipes/bourbon-butter.html",
+        "ingredients": [
+          { "amount": 0.5, "unit": "cup", "item": "unsalted butter" },
+          { "amount": 2, "unit": "cloves", "item": "garlic" },
+          { "amount": 2, "unit": "TBSP", "item": "bourbon of choice" },
+          { "amount": 1, "unit": "TBSP", "item": "green onion" },
+          { "amount": 1, "unit": "TBSP", "item": "parsley" },
+          { "amount": 0.5, "unit": "tsp", "item": "salt" },
+          { "amount": 0.5, "unit": "tsp", "item": "pepper" }
+        ]
+      },      
       { "name": "Restaurant", "url": "recipes/restaurant.html" },
       { "name": "Leftovers", "url": "recipes/leftovers.html" }
     ]
@@ -176,7 +204,7 @@
           { "amount": 1, "unit": "TBSP", "item": "whole black peppercorn" },
           { "amount": 1, "unit": "TBSP", "item": "apple cider vinegar" },
           { "amount": 1.5, "unit": "each", "item": "water" },
-          { "amount": 2, "unit": "dashes", "item": "salt" },
+          { "amount": 2, "unit": "pinch", "item": "salt" },
           { "amount": 2, "unit": "TBSP", "item": "cumin" },
           { "amount": 1.5, "unit": "TBSP", "item": "better than bouillon beef" },
           { "amount": 2, "unit": "TBSP", "item": "taco seasoning" },
@@ -384,7 +412,18 @@
           { "amount": 0.5, "unit": "tsp", "item": "baking soda" },
           { "amount": 0.5, "unit": "cup", "item": "mini chocolate chips" }
         ]
-      }
+      },
+    {
+        "name": "Better Than Sex Cake",
+        "url": "recipes/better-than-sex-cake.html",
+        "ingredients": [
+          { "amount": 1, "unit": "box", "item": "devil's food cake" },
+          { "amount": 7, "unit": "oz", "item": "sweetened condensed milk" },
+          { "amount": 6, "unit": "oz", "item": "caramel ice cream topping" },
+          { "amount": 3, "unit": "each", "item": "heath bars" },
+          { "amount": 8, "unit": "oz", "item": "cool whip" }
+        ]
+      },
     ],
     "Bars": [
       {
@@ -396,13 +435,26 @@
           { "amount": 0.25, "unit": "cup", "item": "honey" },
           { "amount": 0.66, "unit": "cup", "item": "coconut oil" },
           { "amount": 1, "unit": "each", "item": "lemon" },
-          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 1, "unit": "pinch", "item": "salt" },
           { "amount": 1, "unit": "each", "item": "walnuts" },
           { "amount": 1, "unit": "each", "item": "coconut flakes" }
       ]
-    }
-  ]
-},
+    },
+ {
+        "name": "Blueberry Oat Bars",
+        "url": "recipes/bblueberry-oat-bars.html",
+        "ingredients": [
+          { "amount": 2, "unit": "cup", "item": "rolled oats" },
+          { "amount": 1, "unit": "cup", "item": "almonds" },
+          { "amount": 2, "unit": "scoop", "item": "vanilla protien powder" },
+          { "amount": 10, "unit": "each", "item": "dates" },
+          { "amount": 0.5, "unit": "cup", "item": "agave syrup" },
+          { "amount": 0.5, "unit": "tsp", "item": "vanilla extract" },
+          { "amount": 1, "unit": "pinch", "item": "salt" },
+          { "amount": 1, "unit": "cup", "item": "blueberries" }
+        ]
+      },
+    ],
   
   "Breakfast": {
     "Skillet": [
@@ -457,6 +509,7 @@
     ]
   }
 }
+
 
 
 
