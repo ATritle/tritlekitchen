@@ -244,7 +244,7 @@ ingredientInput.addEventListener("input", () => {
   </script>
 <script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js")
+  navigator.serviceWorker.register("service-worker.js?v=" + Date.now())
     .then(registration => {
 
       // If there's an updated SW waiting
@@ -270,6 +270,7 @@ if ("serviceWorker" in navigator) {
 
 </body>
 </html>
+
 
 
 
