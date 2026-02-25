@@ -43,16 +43,10 @@
   color: #fff;
 }
 
-.recipe-chip {
-  padding: 8px 10px;
-  margin: 6px 0;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.15);
-  cursor: grab;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#recipePool .recipe-chip {
+  padding: 16px 14px;
+  font-size: 18px;
+  min-height: 52px;
 }
 
 .remove-btn {
@@ -201,6 +195,11 @@ select {
   text-decoration: line-through;
   opacity: 0.5;
 }
+
+.recipe-chip:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
   
 </style>
 </head>
@@ -256,6 +255,23 @@ select {
 </div>
 
 <script>
+  
+function triggerHaptic(type = "light") {
+  if (!navigator.vibrate) return;
+
+  switch (type) {
+    case "light":
+      navigator.vibrate(10);
+      break;
+    case "medium":
+      navigator.vibrate(20);
+      break;
+    case "heavy":
+      navigator.vibrate([30, 10, 30]);
+      break;
+  }
+}
+  
 const clearChecksBtn = document.getElementById("clearChecks");
 
 clearChecksBtn.addEventListener("click", () => {
@@ -361,6 +377,7 @@ title.innerHTML = `
 
 day.addEventListener("drop", e => {
   e.preventDefault();
+  triggerHaptic("medium");
 
   if (window.currentDraggedChip) {
 
@@ -406,10 +423,11 @@ function createDraggableChip(recipe) {
   chip.textContent = recipe.name;
   chip.draggable = true;
 
-  chip.addEventListener("dragstart", e=>{
-    e.dataTransfer.setData("text/plain", JSON.stringify(recipe));
-    window.currentDraggedChip = chip;   // 🔥 THIS WAS MISSING
-  });
+chip.addEventListener("dragstart", e => {
+  triggerHaptic("light");   // 👈 HAPTIC HERE
+  e.dataTransfer.setData("text/plain", JSON.stringify(recipe));
+  window.currentDraggedChip = chip;
+});
 
   recipePool.appendChild(chip);
 }
@@ -431,6 +449,7 @@ function createRecipeChip(day, recipe) {
   removeBtn.className = "remove-btn";
   removeBtn.onclick = () => {
     chip.remove();
+    triggerHaptic("heavy");
     saveWeek();
   };
 
