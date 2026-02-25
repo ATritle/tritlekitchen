@@ -355,3 +355,34 @@ select:focus {
   margin: 0 auto 20px auto;
   padding: 0;
 }
+
+/* Make page structure flex so footer sticks to bottom */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* If you have a main wrapper, use that instead of main */
+main {
+  flex: 1;
+}
+
+/* Footer styling */
+.site-footer {
+  background-color: #fafafa;           /* soft light background */
+  color: #666;                         /* muted text */
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-top: 1px solid #e5e5e5;       /* subtle divider */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
