@@ -331,6 +331,23 @@ select:focus {
   font-weight: 600;
 }
 
+#plannerSearch {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+
+  font-size: 22px;
+  padding: 16px;
+
+  background: #1e1e1e;
+  color: #ffffff;
+
+  border: 2px solid #333;
+  border-radius: 12px;
+
+  outline: none;
+}
 
 
 
