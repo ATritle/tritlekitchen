@@ -322,6 +322,14 @@ select:focus {
   filter: drop-shadow(0 8px 8px rgba(0,0,0,0.6));
 }
 
+.planner-title {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
 
 
 
