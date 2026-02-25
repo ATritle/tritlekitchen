@@ -1,7 +1,8 @@
 {
   "name": "The Tritle Kitchen",
   "short_name": "Tritle Kitchen",
-  "start_url": "/",
+  "start_url": "/tritlekitchen/",
+  "scope": "/tritlekitchen/",
   "display": "standalone",
   "background_color": "#0f0f0f",
   "theme_color": "#0f0f0f",
