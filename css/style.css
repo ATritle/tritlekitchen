@@ -349,7 +349,8 @@ select:focus {
   outline: none;
 }
 
-
-
-
-
+#recipePool {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
