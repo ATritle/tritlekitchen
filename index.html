@@ -244,32 +244,38 @@ ingredientInput.addEventListener("input", () => {
   </script>
 <script>
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js?v=" + Date.now())
-    .then(registration => {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(registration => {
 
-      // If there's an updated SW waiting
-      if (registration.waiting) {
-        registration.waiting.postMessage({ type: "SKIP_WAITING" });
-      }
+        console.log("Service Worker registered");
 
-      // Detect new SW installing
-      registration.addEventListener("updatefound", () => {
-        const newWorker = registration.installing;
+        // If there's already an update waiting
+        if (registration.waiting) {
+          registration.waiting.postMessage({ type: "SKIP_WAITING" });
+        }
 
-        newWorker.addEventListener("statechange", () => {
-          if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
-            // 🔥 Auto reload when new version takes over
-            window.location.reload();
-          }
+        registration.addEventListener("updatefound", () => {
+          const newWorker = registration.installing;
+
+          newWorker.addEventListener("statechange", () => {
+            if (newWorker.state === "installed") {
+              console.log("New version available");
+            }
+          });
         });
-      });
 
-    });
+      })
+      .catch(error => {
+        console.log("Service Worker registration failed:", error);
+      });
+  });
 }
 </script>
 
 </body>
 </html>
+
 
 
 
