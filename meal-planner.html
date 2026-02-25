@@ -636,7 +636,7 @@ document.getElementById("exportCalendar").addEventListener("click", e => {
   const startOfWeek = new Date(today);
   startOfWeek.setDate(today.getDate() - today.getDay());
 
-  let icsContent = `BEGIN:VCALENDAR
+  let ics = `BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Tritle Kitchen//Meal Planner//EN
 `;
@@ -645,11 +645,10 @@ PRODID:-//Tritle Kitchen//Meal Planner//EN
     const eventDate = new Date(startOfWeek);
     eventDate.setDate(startOfWeek.getDate() + i);
 
+    const dateStr = eventDate.toISOString().split("T")[0].replace(/-/g, "");
+
     dayRecipes.forEach(recipe => {
-
-      const dateStr = eventDate.toISOString().split("T")[0].replace(/-/g, "");
-
-      icsContent += `
+      ics += `
 BEGIN:VEVENT
 UID:${Date.now()}-${Math.random()}
 DTSTAMP:${dateStr}T120000Z
@@ -662,19 +661,12 @@ END:VEVENT
     });
   });
 
-  icsContent += "END:VCALENDAR";
+  ics += "END:VCALENDAR";
 
-  const blob = new Blob([icsContent], { type: "text/calendar" });
+  const blob = new Blob([ics], { type: "text/calendar" });
   const url = URL.createObjectURL(blob);
 
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "Tritle-Kitchen-Meal-Plan.ics";
-  document.body.appendChild(a);
-  a.click();
-
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  window.location.href = url;
 });
   
 </script>
