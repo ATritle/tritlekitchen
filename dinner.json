@@ -1,219 +1,219 @@
 {
-    "Mexican Meals": [
-      {
-        "name": "Birria Tacos",
-        "url": "recipes/birria-tacos.html",
-        "ingredients": [
-          { "amount": 3.5, "unit": "LBS", "item": "beef chuck roast" },
-          { "amount": 3, "unit": "each", "item": "onion" },
-          { "amount": 4, "unit": "each", "item": "roma tomato" },
-          { "amount": 5, "unit": "cloves", "item": "garlic" },
-          { "amount": 2, "unit": "each", "item": "dried ancho chile pepper" },
-          { "amount": 2, "unit": "each", "item": "dried guajillo chile pepper" },
-          { "amount": 1, "unit": "each", "item": "bay leaf" },
-          { "amount": 2, "unit": "dashes", "item": "ground cinnamon" },
-          { "amount": 1, "unit": "TBSP", "item": "whole black peppercorn" },
-          { "amount": 1, "unit": "TBSP", "item": "apple cider vinegar" },
-          { "amount": 1.5, "unit": "each", "item": "water" },
-          { "amount": 2, "unit": "pinch", "item": "salt" },
-          { "amount": 2, "unit": "TBSP", "item": "cumin" },
-          { "amount": 1.5, "unit": "TBSP", "item": "better than bouillon beef" },
-          { "amount": 2, "unit": "TBSP", "item": "taco seasoning" },
-          { "amount": 2, "unit": "tsp", "item": "dried oregano" },
-          { "amount": 2, "unit": "tsp", "item": "garlic powder" },
-          { "amount": 1, "unit": "each", "item": "red onion" },
-          { "amount": 1, "unit": "each", "item": "cilantro" },
-          { "amount": 1, "unit": "each", "item": "flour tortillas" },
-          { "amount": 1, "unit": "each", "item": "chinuahua cheese" },
-          { "amount": 2, "unit": "each", "item": "lime" }
-        ]
-      }
-    ],
-
-    "American Meals": [
-      {
-        "name": "Bacon Cheeseburger Tatortot Casserole",
-        "url": "recipes/bacon-cheeseburger-tatortot-casserole.html",
-        "ingredients": [
-          { "amount": 1.5, "unit": "LBS", "item": "ground beef" },
-          { "amount": 3, "unit": "oz", "item": "bacon bits (black label)" },
-          { "amount": 2, "unit": "cup", "item": "cheddar cheese" },
-          { "amount": 32, "unit": "oz", "item": "tator tots" },
-          { "amount": 10.75, "unit": "oz", "item": "condensed cream of chicken soup" },
-          { "amount": 16, "unit": "oz", "item": "sour cream" }
-        ]
-      }
-    ],
-
-    "Mediterranean Meals": [
-      {
-        "name": "Chicken Gyro Bowl",
-        "url": "recipes/chicken-gyro-bowl.html",
-        "ingredients": [
-          { "amount": 16, "unit": "oz", "item": "chicken" },
-          { "amount": 0.5, "unit": "each", "item": "red onion" },
-          { "amount": 1, "unit": "each", "item": "english cucumber" },
-          { "amount": 2, "unit": "each", "item": "roma tomato" },
-          { "amount": 4, "unit": "each", "item": "kalamata olives" },
-          { "amount": 8, "unit": "oz", "item": "feta cheese" },
-          { "amount": 1, "unit": "cup", "item": "tzatziki sauce" },
-          { "amount": 2, "unit": "cloves", "item": "garlic" },
-          { "amount": 1, "unit": "TBSP", "item": "red wine vinegar" },
-          { "amount": 0.5, "unit": "each", "item": "lemon" },
-          { "amount": 2, "unit": "TBSP", "item": "extra virgin olive oil" },
-          { "amount": 3, "unit": "TBSP", "item": "greek yogurt" },
-          { "amount": 2, "unit": "tsp", "item": "dried oregano" },
-          { "amount": 0.75, "unit": "tsp", "item": "salt" }
-        ]
-      }
-    ],
-
-    "Asian Meals": [
-      {
-        "name": "Korean Beef",
-        "url": "recipes/korean-beef.html",
-        "ingredients": [
-          { "amount": 1.5, "unit": "LBS", "item": "flank steak" },
-          { "amount": 0.25, "unit": "cup", "item": "cornstarch" },
-          { "amount": 1.5, "unit": "TBSP", "item": "sesame oil" },
-          { "amount": 2, "unit": "cloves", "item": "garlic" },
-          { "amount": 0.5, "unit": "tsp", "item": "fresh ginger" },
-          { "amount": 2, "unit": "tsp", "item": "rice vinegar" },
-          { "amount": 0.5, "unit": "cup", "item": "liquid aminos" },
-          { "amount": 0.5, "unit": "cup", "item": "beef broth" },
-          { "amount": 0.75, "unit": "cup", "item": "brown sugar" },
-          { "amount": 0.25, "unit": "tsp", "item": "red pepper flakes" },
-          { "amount": 4, "unit": "each", "item": "green onion" }
-        ]
-      },
-      {
-        "name": "Thai Chicken Lettuce Wrap",
-        "url": "recipes/thai-chicken-lettuce-wrap.html",
-        "ingredients": [
-          { "amount": 1, "unit": "tsp", "item": "sesame oil" },
-          { "amount": 2, "unit": "clove", "item": "garlic" },
-          { "amount": 1, "unit": "each", "item": "onion" },
-          { "amount": 1, "unit": "cup", "item": "carrot" },
-          { "amount": 1, "unit": "LBS", "item": "chicken" },
-          { "amount": 3, "unit": "TBSP", "item": "liquid aminos" },
-          { "amount": 2, "unit": "tsp", "item": "rice vinegar" },
-          { "amount": 2, "unit": "TBSP", "item": "brown sugar" },
-          { "amount": 1, "unit": "TBSP", "item": "peanut butter" },
-          { "amount": 1, "unit": "dashes", "item": "chili paste" },
-          { "amount": 2, "unit": "tsp", "item": "cornstarch" },
-          { "amount": 2, "unit": "tsp", "item": "water" },
-          { "amount": 12, "unit": "each", "item": "romaine or butter lettuce" },
-          { "amount": 0.25, "unit": "cup", "item": "peanuts" },
-          { "amount": 0.75, "unit": "each", "item": "green onion" }
-        ]
-      },
+  "Mexican Meals": [
     {
-        "name": "Teriyaki Chicken Crispy Rice Salad",
-        "url": "recipes/teriyaki-chicken-crispy-rice-salad.html",
-        "ingredients": [
-          { "amount": 2, "unit": "cup", "item": "jasmine rice" },
-          { "amount": 1, "unit": "TBSP", "item": "sesame oil" },
-          { "amount": 2, "unit": "TBSP", "item": "teriyaki sauce" },
-          { "amount": 1, "unit": "each", "item": "rotisserie chicken" },
-          { "amount": 0.25, "unit": "cup", "item": "teriyaki sauce" },
-          { "amount": 1, "unit": "each", "item": "english cucumber" },
-          { "amount": 0.5, "unit": "cup", "item": "red cabbage" },
-          { "amount": 0.5, "unit": "cup", "item": "cilantro" },
-          { "amount": 1, "unit": "bunch", "item": "green onion" },
-          { "amount": 1, "unit": "each", "item": "bell pepper" },
-          { "amount": 0.5, "unit": "cup", "item": "peanuts" },
-          { "amount": 0.5, "unit": "cup", "item": "olive oil" },
-          { "amount": 3, "unit": "TBSP", "item": "toasted sesame oil" },
-          { "amount": 3, "unit": "TBSP", "item": "soy sauce" },
-          { "amount": 3, "unit": "TBSP", "item": "rice vinegar" },
-          { "amount": 2, "unit": "TBSP", "item": "maple syrup" },
-          { "amount": 2, "unit": "TBSP", "item": "cashew or peanut butter" },
-          { "amount": 2, "unit": "cloves", "item": "garlic" },
-          { "amount": 1, "unit": "TBSP", "item": "fresh ginger" }
-        ]
-      },
-    ],
+      "name": "Birria Tacos",
+      "url": "recipes/birria-tacos.html",
+      "ingredients": [
+        { "amount": 3.5, "unit": "LBS", "item": "beef chuck roast" },
+        { "amount": 3, "unit": "each", "item": "onion" },
+        { "amount": 4, "unit": "each", "item": "roma tomato" },
+        { "amount": 5, "unit": "cloves", "item": "garlic" },
+        { "amount": 2, "unit": "each", "item": "dried ancho chile pepper" },
+        { "amount": 2, "unit": "each", "item": "dried guajillo chile pepper" },
+        { "amount": 1, "unit": "each", "item": "bay leaf" },
+        { "amount": 2, "unit": "dashes", "item": "ground cinnamon" },
+        { "amount": 1, "unit": "TBSP", "item": "whole black peppercorn" },
+        { "amount": 1, "unit": "TBSP", "item": "apple cider vinegar" },
+        { "amount": 1.5, "unit": "each", "item": "water" },
+        { "amount": 2, "unit": "pinch", "item": "salt" },
+        { "amount": 2, "unit": "TBSP", "item": "cumin" },
+        { "amount": 1.5, "unit": "TBSP", "item": "better than bouillon beef" },
+        { "amount": 2, "unit": "TBSP", "item": "taco seasoning" },
+        { "amount": 2, "unit": "tsp", "item": "dried oregano" },
+        { "amount": 2, "unit": "tsp", "item": "garlic powder" },
+        { "amount": 1, "unit": "each", "item": "red onion" },
+        { "amount": 1, "unit": "each", "item": "cilantro" },
+        { "amount": 1, "unit": "each", "item": "flour tortillas" },
+        { "amount": 1, "unit": "each", "item": "chinuahua cheese" },
+        { "amount": 2, "unit": "each", "item": "lime" }
+      ]
+    }
+  ],
 
-    "Italian Meals": [
-      {
-        "name": "Balls of Meat",
-        "url": "recipes/balls-of-meat.html",
-        "ingredients": [
-          { "amount": 2, "unit": "cup", "item": "ketchup" },
-          { "amount": 2, "unit": "cup", "item": "brown sugar" },
-          { "amount": 0.5, "unit": "cup", "item": "onion" },
-          { "amount": 2, "unit": "tsp", "item": "liquid smoke" },
-          { "amount": 0.5, "unit": "tsp", "item": "garlic powder" },
-          { "amount": 32, "unit": "oz", "item": "frozen meatballs" }
-        ]
-      }
-    ],
+  "American Meals": [
+    {
+      "name": "Bacon Cheeseburger Tatortot Casserole",
+      "url": "recipes/bacon-cheeseburger-tatortot-casserole.html",
+      "ingredients": [
+        { "amount": 1.5, "unit": "LBS", "item": "ground beef" },
+        { "amount": 3, "unit": "oz", "item": "bacon bits (black label)" },
+        { "amount": 2, "unit": "cup", "item": "cheddar cheese" },
+        { "amount": 32, "unit": "oz", "item": "tator tots" },
+        { "amount": 10.75, "unit": "oz", "item": "condensed cream of chicken soup" },
+        { "amount": 16, "unit": "oz", "item": "sour cream" }
+      ]
+    }
+  ],
 
-    "Soups": [
-            {
-        "name": "Chili",
-        "url": "recipes/chili.html",
-        "ingredients": [
-          { "amount": 2, "unit": "LBS", "item": "ground beef or pork" },
-          { "amount": 16, "unit": "oz", "item": "onion" },
-          { "amount": 20, "unit": "oz", "item": "rotel" },
-          { "amount": 1, "unit": "TBSP", "item": "black beans" },
-          { "amount": 4, "unit": "cup", "item": "kidney beans" },
-          { "amount": 4, "unit": "oz", "item": "chili powder" },
-          { "amount": 15, "unit": "oz", "item": "beef stock" },
-          { "amount": 1, "unit": "each", "item": "cheddar cheese" },
-          { "amount": 1, "unit": "each", "item": "cilantro" }
-        ]
-      },
-      {
-        "name": "Taco Soup",
-        "url": "recipes/taco-soup.html",
-        "ingredients": [
-          { "amount": 2, "unit": "LBS", "item": "ground beef" },
-          { "amount": 16, "unit": "oz", "item": "cream cheese" },
-          { "amount": 20, "unit": "oz", "item": "rotel" },
-          { "amount": 1, "unit": "TBSP", "item": "taco seasoning" },
-          { "amount": 4, "unit": "cup", "item": "chicken broth" },
-          { "amount": 4, "unit": "oz", "item": "jalapenos or poblanos" },
-          { "amount": 15, "unit": "oz", "item": "black beans" },
-          { "amount": 1, "unit": "each", "item": "cheddar cheese" },
-          { "amount": 1, "unit": "each", "item": "cilantro" }
-        ]
-      },
+  "Mediterranean Meals": [
     {
-        "name": "Potato Soup",
-        "url": "recipes/potato-soup.html",
-        "ingredients": [
-          { "amount": 3, "unit": "each", "item": "russet potato" },
-          { "amount": 0.5, "unit": "each", "item": "onion" },
-          { "amount": 2, "unit": "cup", "item": "chicken broth" },
-          { "amount": 1, "unit": "cup", "item": "milk" },
-          { "amount": 0.5, "unit": "cup", "item": "heavy whipping cream" },
-          { "amount": 1, "unit": "dashes", "item": "salt" },
-          { "amount": 1, "unit": "dashes", "item": "pepper" },
-          { "amount": 0.25, "unit": "tsp", "item": "garlic powder" },
-          { "amount": 0.25, "unit": "tsp", "item": "paprika" },
-          { "amount": 1, "unit": "cup", "item": "cheddar cheese" },
-          { "amount": 0.3, "unit": "cup", "item": "sour cream" },
-          { "amount": 0.5, "unit": "LBS", "item": "bacon" }
-        ]
-      },
+      "name": "Chicken Gyro Bowl",
+      "url": "recipes/chicken-gyro-bowl.html",
+      "ingredients": [
+        { "amount": 16, "unit": "oz", "item": "chicken" },
+        { "amount": 0.5, "unit": "each", "item": "red onion" },
+        { "amount": 1, "unit": "each", "item": "english cucumber" },
+        { "amount": 2, "unit": "each", "item": "roma tomato" },
+        { "amount": 4, "unit": "each", "item": "kalamata olives" },
+        { "amount": 8, "unit": "oz", "item": "feta cheese" },
+        { "amount": 1, "unit": "cup", "item": "tzatziki sauce" },
+        { "amount": 2, "unit": "cloves", "item": "garlic" },
+        { "amount": 1, "unit": "TBSP", "item": "red wine vinegar" },
+        { "amount": 0.5, "unit": "each", "item": "lemon" },
+        { "amount": 2, "unit": "TBSP", "item": "extra virgin olive oil" },
+        { "amount": 3, "unit": "TBSP", "item": "greek yogurt" },
+        { "amount": 2, "unit": "tsp", "item": "dried oregano" },
+        { "amount": 0.75, "unit": "tsp", "item": "salt" }
+      ]
+    }
+  ],
+
+  "Asian Meals": [
     {
-        "name": "French Onion Soup",
-        "url": "recipes/french-onion-soup.html",
-        "ingredients": [
-          { "amount": 6, "unit": "cup", "item": "onion" },
-          { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
-          { "amount": 2, "unit": "TBSP", "item": "olive oil" },
-          { "amount": 6, "unit": "each", "item": "fresh thyme" },
-          { "amount": 1, "unit": "each", "item": "bay leaf" },
-          { "amount": 0.5, "unit": "cup", "item": "white wine" },
-          { "amount": 4, "unit": "cup", "item": "beef broth" },
-          { "amount": 1.5, "unit": "cup", "item": "gruyere cheese" },
-          { "amount": 2, "unit": "TBSP", "item": "worcestershire sauce" },
-          { "amount": 1, "unit": "dashes", "item": "salt" },
-          { "amount": 1, "unit": "dashes", "item": "pepper" }
-        ]
-      }
-    ]
-  }
+      "name": "Korean Beef",
+      "url": "recipes/korean-beef.html",
+      "ingredients": [
+        { "amount": 1.5, "unit": "LBS", "item": "flank steak" },
+        { "amount": 0.25, "unit": "cup", "item": "cornstarch" },
+        { "amount": 1.5, "unit": "TBSP", "item": "sesame oil" },
+        { "amount": 2, "unit": "cloves", "item": "garlic" },
+        { "amount": 0.5, "unit": "tsp", "item": "fresh ginger" },
+        { "amount": 2, "unit": "tsp", "item": "rice vinegar" },
+        { "amount": 0.5, "unit": "cup", "item": "liquid aminos" },
+        { "amount": 0.5, "unit": "cup", "item": "beef broth" },
+        { "amount": 0.75, "unit": "cup", "item": "brown sugar" },
+        { "amount": 0.25, "unit": "tsp", "item": "red pepper flakes" },
+        { "amount": 4, "unit": "each", "item": "green onion" }
+      ]
+    },
+    {
+      "name": "Thai Chicken Lettuce Wrap",
+      "url": "recipes/thai-chicken-lettuce-wrap.html",
+      "ingredients": [
+        { "amount": 1, "unit": "tsp", "item": "sesame oil" },
+        { "amount": 2, "unit": "clove", "item": "garlic" },
+        { "amount": 1, "unit": "each", "item": "onion" },
+        { "amount": 1, "unit": "cup", "item": "carrot" },
+        { "amount": 1, "unit": "LBS", "item": "chicken" },
+        { "amount": 3, "unit": "TBSP", "item": "liquid aminos" },
+        { "amount": 2, "unit": "tsp", "item": "rice vinegar" },
+        { "amount": 2, "unit": "TBSP", "item": "brown sugar" },
+        { "amount": 1, "unit": "TBSP", "item": "peanut butter" },
+        { "amount": 1, "unit": "dashes", "item": "chili paste" },
+        { "amount": 2, "unit": "tsp", "item": "cornstarch" },
+        { "amount": 2, "unit": "tsp", "item": "water" },
+        { "amount": 12, "unit": "each", "item": "romaine or butter lettuce" },
+        { "amount": 0.25, "unit": "cup", "item": "peanuts" },
+        { "amount": 0.75, "unit": "each", "item": "green onion" }
+      ]
+    },
+    {
+      "name": "Teriyaki Chicken Crispy Rice Salad",
+      "url": "recipes/teriyaki-chicken-crispy-rice-salad.html",
+      "ingredients": [
+        { "amount": 2, "unit": "cup", "item": "jasmine rice" },
+        { "amount": 1, "unit": "TBSP", "item": "sesame oil" },
+        { "amount": 2, "unit": "TBSP", "item": "teriyaki sauce" },
+        { "amount": 1, "unit": "each", "item": "rotisserie chicken" },
+        { "amount": 0.25, "unit": "cup", "item": "teriyaki sauce" },
+        { "amount": 1, "unit": "each", "item": "english cucumber" },
+        { "amount": 0.5, "unit": "cup", "item": "red cabbage" },
+        { "amount": 0.5, "unit": "cup", "item": "cilantro" },
+        { "amount": 1, "unit": "bunch", "item": "green onion" },
+        { "amount": 1, "unit": "each", "item": "bell pepper" },
+        { "amount": 0.5, "unit": "cup", "item": "peanuts" },
+        { "amount": 0.5, "unit": "cup", "item": "olive oil" },
+        { "amount": 3, "unit": "TBSP", "item": "toasted sesame oil" },
+        { "amount": 3, "unit": "TBSP", "item": "soy sauce" },
+        { "amount": 3, "unit": "TBSP", "item": "rice vinegar" },
+        { "amount": 2, "unit": "TBSP", "item": "maple syrup" },
+        { "amount": 2, "unit": "TBSP", "item": "cashew or peanut butter" },
+        { "amount": 2, "unit": "cloves", "item": "garlic" },
+        { "amount": 1, "unit": "TBSP", "item": "fresh ginger" }
+      ]
+    }
+  ],
+
+  "Italian Meals": [
+    {
+      "name": "Balls of Meat",
+      "url": "recipes/balls-of-meat.html",
+      "ingredients": [
+        { "amount": 2, "unit": "cup", "item": "ketchup" },
+        { "amount": 2, "unit": "cup", "item": "brown sugar" },
+        { "amount": 0.5, "unit": "cup", "item": "onion" },
+        { "amount": 2, "unit": "tsp", "item": "liquid smoke" },
+        { "amount": 0.5, "unit": "tsp", "item": "garlic powder" },
+        { "amount": 32, "unit": "oz", "item": "frozen meatballs" }
+      ]
+    }
+  ],
+
+  "Soups": [
+    {
+      "name": "Chili",
+      "url": "recipes/chili.html",
+      "ingredients": [
+        { "amount": 2, "unit": "LBS", "item": "ground beef or pork" },
+        { "amount": 16, "unit": "oz", "item": "onion" },
+        { "amount": 20, "unit": "oz", "item": "rotel" },
+        { "amount": 1, "unit": "TBSP", "item": "black beans" },
+        { "amount": 4, "unit": "cup", "item": "kidney beans" },
+        { "amount": 4, "unit": "oz", "item": "chili powder" },
+        { "amount": 15, "unit": "oz", "item": "beef stock" },
+        { "amount": 1, "unit": "each", "item": "cheddar cheese" },
+        { "amount": 1, "unit": "each", "item": "cilantro" }
+      ]
+    },
+    {
+      "name": "Taco Soup",
+      "url": "recipes/taco-soup.html",
+      "ingredients": [
+        { "amount": 2, "unit": "LBS", "item": "ground beef" },
+        { "amount": 16, "unit": "oz", "item": "cream cheese" },
+        { "amount": 20, "unit": "oz", "item": "rotel" },
+        { "amount": 1, "unit": "TBSP", "item": "taco seasoning" },
+        { "amount": 4, "unit": "cup", "item": "chicken broth" },
+        { "amount": 4, "unit": "oz", "item": "jalapenos or poblanos" },
+        { "amount": 15, "unit": "oz", "item": "black beans" },
+        { "amount": 1, "unit": "each", "item": "cheddar cheese" },
+        { "amount": 1, "unit": "each", "item": "cilantro" }
+      ]
+    },
+    {
+      "name": "Potato Soup",
+      "url": "recipes/potato-soup.html",
+      "ingredients": [
+        { "amount": 3, "unit": "each", "item": "russet potato" },
+        { "amount": 0.5, "unit": "each", "item": "onion" },
+        { "amount": 2, "unit": "cup", "item": "chicken broth" },
+        { "amount": 1, "unit": "cup", "item": "milk" },
+        { "amount": 0.5, "unit": "cup", "item": "heavy whipping cream" },
+        { "amount": 1, "unit": "dashes", "item": "salt" },
+        { "amount": 1, "unit": "dashes", "item": "pepper" },
+        { "amount": 0.25, "unit": "tsp", "item": "garlic powder" },
+        { "amount": 0.25, "unit": "tsp", "item": "paprika" },
+        { "amount": 1, "unit": "cup", "item": "cheddar cheese" },
+        { "amount": 0.3, "unit": "cup", "item": "sour cream" },
+        { "amount": 0.5, "unit": "LBS", "item": "bacon" }
+      ]
+    },
+    {
+      "name": "French Onion Soup",
+      "url": "recipes/french-onion-soup.html",
+      "ingredients": [
+        { "amount": 6, "unit": "cup", "item": "onion" },
+        { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
+        { "amount": 2, "unit": "TBSP", "item": "olive oil" },
+        { "amount": 6, "unit": "each", "item": "fresh thyme" },
+        { "amount": 1, "unit": "each", "item": "bay leaf" },
+        { "amount": 0.5, "unit": "cup", "item": "white wine" },
+        { "amount": 4, "unit": "cup", "item": "beef broth" },
+        { "amount": 1.5, "unit": "cup", "item": "gruyere cheese" },
+        { "amount": 2, "unit": "TBSP", "item": "worcestershire sauce" },
+        { "amount": 1, "unit": "dashes", "item": "salt" },
+        { "amount": 1, "unit": "dashes", "item": "pepper" }
+      ]
+    }
+  ]
+}
