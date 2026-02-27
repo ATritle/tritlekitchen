@@ -456,6 +456,8 @@ main {
 /* ===== Floating Recipe Preview ===== */
 
 .recipe-preview {
+  cursor: pointer;
+  transition: transform 0.15s ease;
   position: absolute;
   width: 320px;
   background: rgba(25, 25, 25, 0.95);
@@ -488,6 +490,10 @@ main {
   font-size: 18px;
 }
 
+.recipe-preview:active {
+  transform: scale(0.98);
+}
+
 .recipe-preview p {
   font-size: 14px;
   color: #ccc;
@@ -502,3 +508,4 @@ main {
     max-width: 400px;
   }
 }
+
