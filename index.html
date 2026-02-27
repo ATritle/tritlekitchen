@@ -249,14 +249,14 @@ allRecipes
     // Desktop
     li.addEventListener("mouseenter", function (e) {
       if (!isTouch) {
-        showPreview(e.clientX + 12, e.clientY + 12);
+        showPreview(e.clientX + 2, e.clientY + 2);
       }
     });
 
     li.addEventListener("mousemove", function (e) {
       if (!isTouch) {
-        preview.style.top = (e.clientY + 12) + "px";
-        preview.style.left = (e.clientX + 12) + "px";
+        preview.style.top = (e.clientY + 2) + "px";
+        preview.style.left = (e.clientX + 2) + "px";
       }
     });
 
@@ -409,6 +409,7 @@ function closeModal() {
   
 </body>
 </html>
+
 
 
 
