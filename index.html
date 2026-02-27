@@ -197,8 +197,32 @@ recipe.addEventListener("change", () => {
       .sort((a, b) => a.name.localeCompare(b.name))
       .forEach(r => {
         const li = document.createElement("li");
-        li.textContent = r.name;
-        li.onclick = () => window.open(r.url, "_blank");
+li.textContent = r.name;
+
+const preview = document.getElementById("recipePreview");
+
+li.addEventListener("mouseenter", (e) => {
+  if (!r.thumbnail) return;
+
+  preview.innerHTML = `
+    <img src="${r.thumbnail}" alt="${r.name}">
+    <h3>${r.name}</h3>
+    <p>${r.preview || ""}</p>
+  `;
+
+  preview.style.top = e.clientY + 20 + "px";
+  preview.style.left = e.clientX + 20 + "px";
+
+  preview.classList.add("show");
+  preview.classList.remove("hidden");
+});
+
+li.addEventListener("mouseleave", () => {
+  preview.classList.remove("show");
+  setTimeout(() => preview.classList.add("hidden"), 200);
+});
+
+li.onclick = () => window.open(r.url, "_blank");
         results.appendChild(li);
       });
   });
@@ -321,4 +345,5 @@ function closeModal() {
   
 </body>
 </html>
+
 
