@@ -3,8 +3,6 @@
     {
       "name": "Birria Tacos",
       "url": "recipes/birria-tacos.html",
-      "thumbnail": "images/birria-tacos.jpg",
-      "preview": "Slow cooked shredded beef in crispy tortillas.",
       "ingredients": [
         { "amount": 3.5, "unit": "LBS", "item": "beef chuck roast" },
         { "amount": 3, "unit": "each", "item": "onion" },
@@ -36,8 +34,6 @@
     {
       "name": "Bacon Cheeseburger Tatortot Casserole",
       "url": "recipes/bacon-cheeseburger-tatortot-casserole.html",
-      "thumbnail": "images/bacon-cheeseburger-tatortor-casserole.jpg",
-      "preview": "Bacon cheeseburger tatortor casserole dish.",
       "ingredients": [
         { "amount": 1.5, "unit": "LBS", "item": "ground beef" },
         { "amount": 3, "unit": "oz", "item": "bacon bits (black label)" },
@@ -76,8 +72,6 @@
     {
       "name": "Korean Beef",
       "url": "recipes/korean-beef.html",
-      "thumbnail": "images/korean-beef.jpg",
-      "preview": "Korean beef made with tender flank steak simmered in a sweet and savory garlic-ginger soy sauce.",
       "ingredients": [
         { "amount": 1.5, "unit": "LBS", "item": "flank steak" },
         { "amount": 0.25, "unit": "cup", "item": "cornstarch" },
@@ -95,8 +89,6 @@
     {
       "name": "Thai Chicken Lettuce Wrap",
       "url": "recipes/thai-chicken-lettuce-wrap.html",
-      "thumbnail": "images/thai-chicken-lettuce-wrap.jpg",
-      "preview": "Lettuce wraps filled with savory ground chicken, garlic, and a sweet-spicy sauce, topped with fresh herbs and crunchy veggies.",      
       "ingredients": [
         { "amount": 1, "unit": "tsp", "item": "sesame oil" },
         { "amount": 2, "unit": "clove", "item": "garlic" },
@@ -118,8 +110,6 @@
     {
       "name": "Teriyaki Chicken Crispy Rice Salad",
       "url": "recipes/teriyaki-chicken-crispy-rice-salad.html",
-      "thumbnail": "images/teriyaki-chicken-crispy-rice-salad.jpg",
-      "preview": "Teriyaki chicken crispy rice salad combines tender glazed chicken, golden crunchy rice, fresh vegetables, and a savory-sweet sesame dressing for a bold, texture-packed meal.",     
       "ingredients": [
         { "amount": 2, "unit": "cup", "item": "jasmine rice" },
         { "amount": 1, "unit": "TBSP", "item": "sesame oil" },
@@ -148,8 +138,6 @@
     {
       "name": "Balls of Meat",
       "url": "recipes/balls-of-meat.html",
-      "thumbnail": "images/balls-of-meat.jpg",
-      "preview": "Juicy meatballs simmered in a rich, sweet-and-savory sauce for a comforting and family-friendly classic.",     
       "ingredients": [
         { "amount": 2, "unit": "cup", "item": "ketchup" },
         { "amount": 2, "unit": "cup", "item": "brown sugar" },
@@ -195,8 +183,6 @@
     {
       "name": "Potato Soup",
       "url": "recipes/potato-soup.html",
-      "thumbnail": "images/potato-soup.jpg",
-      "preview": "Creamy bacon potato soup loaded with tender potatoes, crispy bacon, and savory seasonings for a rich, comforting bowl packed with flavor.",   
       "ingredients": [
         { "amount": 3, "unit": "each", "item": "russet potato" },
         { "amount": 0.5, "unit": "each", "item": "onion" },
@@ -215,8 +201,6 @@
     {
       "name": "French Onion Soup",
       "url": "recipes/french-onion-soup.html",
-      "thumbnail": "images/french-onion-soup.jpg",
-      "preview": "Features deeply caramelized onions simmered in rich beef broth, topped with toasted bread and melted cheese for a classic, comforting dish.",   
       "ingredients": [
         { "amount": 6, "unit": "cup", "item": "onion" },
         { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
