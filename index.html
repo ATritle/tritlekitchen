@@ -192,87 +192,85 @@ recipe.addEventListener("change", () => {
     ingredientInput.value = "";
     ingredientResults.innerHTML = "";
     
-    allRecipes
-      .filter(r => r.name.toLowerCase().includes(term))
-      .sort((a, b) => a.name.localeCompare(b.name))
-      .forEach(r => {
-  const li = document.createElement("li");
-  li.textContent = r.name;
+allRecipes
+  .filter(r => r.name.toLowerCase().includes(term))
+  .sort((a, b) => a.name.localeCompare(b.name))
+  .forEach(r => {
 
-  const preview = document.getElementById("recipePreview");
-  const isTouch = !window.matchMedia("(hover: hover)").matches;
+    const li = document.createElement("li");
+    li.textContent = r.name;
 
-  /* ===== Desktop Hover ===== */
-  li.addEventListener("mouseenter", (e) => {
-  if (!isTouch && r.thumbnail) {
-    preview.innerHTML = `
-      <img src="${r.thumbnail}" alt="${r.name}">
-      <h3>${r.name}</h3>
-      <p>${r.preview || ""}</p>
-    `;
+    const preview = document.getElementById("recipePreview");
+    const isTouch = !window.matchMedia("(hover: hover)").matches;
+    let tappedOnce = false;
 
-    preview.classList.remove("hidden");
-    preview.classList.add("show");
-  }
-});
+    function showPreview(x, y) {
+      if (!r.thumbnail) return;
 
-li.addEventListener("mousemove", (e) => {
-  if (!isTouch) {
-    preview.style.top = e.clientY + 12 + "px";
-    preview.style.left = e.clientX + 12 + "px";
-  }
-});
+      preview.innerHTML =
+        "<img src='" + r.thumbnail + "' alt='" + r.name + "'>" +
+        "<h3>" + r.name + "</h3>" +
+        "<p>" + (r.preview || "") + "</p>";
 
-  li.addEventListener("mouseleave", () => {
-    if (!isTouch) {
+      preview.style.top = y + "px";
+      preview.style.left = x + "px";
+
+      preview.classList.remove("hidden");
+      preview.classList.add("show");
+
+      preview.onclick = function () {
+        window.open(r.url, "_blank");
+      };
+    }
+
+    function hidePreview() {
       preview.classList.remove("show");
-      setTimeout(() => preview.classList.add("hidden"), 200);
-    }
-  });
-
-  /* ===== Mobile First Tap Preview ===== */
-  let tappedOnce = false;
-
-  li.addEventListener("click", (e) => {
-    if (!isTouch) {
-      window.open(r.url, "_blank");
-      return;
+      setTimeout(function () {
+        preview.classList.add("hidden");
+      }, 200);
     }
 
-if (!tappedOnce) {
-  e.preventDefault();
-  tappedOnce = true;
+    // Desktop
+    li.addEventListener("mouseenter", function (e) {
+      if (!isTouch) {
+        showPreview(e.clientX + 12, e.clientY + 12);
+      }
+    });
 
-  const rect = li.getBoundingClientRect();
+    li.addEventListener("mousemove", function (e) {
+      if (!isTouch) {
+        preview.style.top = (e.clientY + 12) + "px";
+        preview.style.left = (e.clientX + 12) + "px";
+      }
+    });
 
-  preview.innerHTML = `
-    <img src="${r.thumbnail}" alt="${r.name}">
-    <h3>${r.name}</h3>
-    <p>${r.preview || ""}</p>
-  `;
+    li.addEventListener("mouseleave", function () {
+      if (!isTouch) hidePreview();
+    });
 
-  preview.style.top = rect.bottom + 10 + "px";
-  preview.style.left = rect.left + 20 + "px";
+    // Mobile
+    li.addEventListener("click", function (e) {
+      if (!isTouch) {
+        window.open(r.url, "_blank");
+        return;
+      }
 
-  preview.classList.remove("hidden");
-  preview.classList.add("show");
+      if (!tappedOnce) {
+        e.preventDefault();
+        tappedOnce = true;
 
-  // 🔥 Clear old click handler first
-  preview.onclick = null;
+        const rect = li.getBoundingClientRect();
+        showPreview(rect.left + 20, rect.bottom + 10);
 
-  // 🔥 Tap preview opens recipe
-  preview.onclick = () => {
-    window.open(r.url, "_blank");
-  };
+        setTimeout(function () {
+          tappedOnce = false;
+        }, 3000);
+      } else {
+        window.open(r.url, "_blank");
+      }
+    });
 
-  setTimeout(() => tappedOnce = false, 3000);
-
-} else {
-  window.open(r.url, "_blank");
-}
-
-  results.appendChild(li);
-});
+    results.appendChild(li);
   });
 
 // 🧄 INGREDIENT SEARCH (MATCH ALL)
@@ -393,6 +391,7 @@ function closeModal() {
   
 </body>
 </html>
+
 
 
 
