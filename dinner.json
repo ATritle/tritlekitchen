@@ -3,6 +3,8 @@
     {
       "name": "Birria Tacos",
       "url": "recipes/birria-tacos.html",
+      "thumbnail": "images/birria-tacos.jpg",
+      "preview": "Slow cooked shredded beef in crispy tortillas.",
       "ingredients": [
         { "amount": 3.5, "unit": "LBS", "item": "beef chuck roast" },
         { "amount": 3, "unit": "each", "item": "onion" },
