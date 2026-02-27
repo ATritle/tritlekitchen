@@ -204,20 +204,24 @@ recipe.addEventListener("change", () => {
 
   /* ===== Desktop Hover ===== */
   li.addEventListener("mouseenter", (e) => {
-    if (!isTouch && r.thumbnail) {
-      preview.innerHTML = `
-        <img src="${r.thumbnail}" alt="${r.name}">
-        <h3>${r.name}</h3>
-        <p>${r.preview || ""}</p>
-      `;
+  if (!isTouch && r.thumbnail) {
+    preview.innerHTML = `
+      <img src="${r.thumbnail}" alt="${r.name}">
+      <h3>${r.name}</h3>
+      <p>${r.preview || ""}</p>
+    `;
 
-      preview.style.top = e.clientY + 20 + "px";
-      preview.style.left = e.clientX + 20 + "px";
+    preview.classList.remove("hidden");
+    preview.classList.add("show");
+  }
+});
 
-      preview.classList.remove("hidden");
-      preview.classList.add("show");
-    }
-  });
+li.addEventListener("mousemove", (e) => {
+  if (!isTouch) {
+    preview.style.top = e.clientY + 12 + "px";
+    preview.style.left = e.clientX + 12 + "px";
+  }
+});
 
   li.addEventListener("mouseleave", () => {
     if (!isTouch) {
@@ -235,29 +239,37 @@ recipe.addEventListener("change", () => {
       return;
     }
 
-    if (!tappedOnce) {
-      e.preventDefault();
-      tappedOnce = true;
+if (!tappedOnce) {
+  e.preventDefault();
+  tappedOnce = true;
 
-      const rect = li.getBoundingClientRect();
+  const rect = li.getBoundingClientRect();
 
-      preview.innerHTML = `
-        <img src="${r.thumbnail}" alt="${r.name}">
-        <h3>${r.name}</h3>
-        <p>${r.preview || ""}</p>
-      `;
+  preview.innerHTML = `
+    <img src="${r.thumbnail}" alt="${r.name}">
+    <h3>${r.name}</h3>
+    <p>${r.preview || ""}</p>
+  `;
 
-      preview.style.top = rect.bottom + 10 + "px";
-      preview.style.left = rect.left + 20 + "px";
+  preview.style.top = rect.bottom + 10 + "px";
+  preview.style.left = rect.left + 20 + "px";
 
-      preview.classList.remove("hidden");
-      preview.classList.add("show");
+  preview.classList.remove("hidden");
+  preview.classList.add("show");
 
-      setTimeout(() => tappedOnce = false, 3000);
-    } else {
-      window.open(r.url, "_blank");
-    }
-  });
+  // 🔥 Clear old click handler first
+  preview.onclick = null;
+
+  // 🔥 Tap preview opens recipe
+  preview.onclick = () => {
+    window.open(r.url, "_blank");
+  };
+
+  setTimeout(() => tappedOnce = false, 3000);
+
+} else {
+  window.open(r.url, "_blank");
+}
 
   results.appendChild(li);
 });
@@ -381,6 +393,7 @@ function closeModal() {
   
 </body>
 </html>
+
 
 
 
