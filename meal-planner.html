@@ -44,6 +44,30 @@
   color: #fff;
 }
 
+.recipe-chip {
+  background: #111;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 0 10px rgba(10, 132, 255, 0.35);
+  transition: all 0.2s ease;
+}
+
+.recipe-chip:hover {
+  transform: scale(1.03);
+  cursor: grab;
+}
+
+.recipe-chip:active {
+  transform: scale(0.97);
+  cursor: grabbing;
+}
+  
 #recipePool .recipe-chip {
   padding: 16px 14px;
   font-size: 18px;
