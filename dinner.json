@@ -27,6 +27,45 @@
         { "amount": 1, "unit": "each", "item": "chinuahua cheese" },
         { "amount": 2, "unit": "each", "item": "lime" }
       ]
+    },
+        {
+      "name": "Mexican Stuffed Peppers",
+      "url": "recipes/mexican-stuffed-peppers.html",
+      "ingredients": [
+        { "amount": 1, "unit": "each", "item": "red bell pepper" },
+        { "amount": 1, "unit": "each", "item": "orange bell pepper" },
+        { "amount": 1, "unit": "each", "item": "yellow bell pepper" },
+        { "amount": 2, "unit": "each", "item": "green bell pepper" },
+        { "amount": 2, "unit": "LBS", "item": "ground beef" },
+        { "amount": 1, "unit": "dashes", "item": "salt" },
+        { "amount": 1, "unit": "dashes", "item": "pepper" },
+        { "amount": 1, "unit": "each", "item": "onion" },
+        { "amount": 5, "unit": "cloves", "item": "garlic" },
+        { "amount": 4, "unit": "TBSP", "item": "taco seasoning" },
+        { "amount": 0.66, "unit": "cup", "item": "beef broth" },
+        { "amount": 1, "unit": "each", "item": "frozen cauliflower" },
+        { "amount": 10, "unit": "oz", "item": "rotel" },
+        { "amount": 2, "unit": "cup", "item": "colby cheese" }
+      ]
+    },
+        {
+      "name": "Elote Chicken Pasta",
+      "url": "recipes/elote-chicken-pasta.html",
+      "ingredients": [
+        { "amount": 3, "unit": "LBS", "item": "chicken" },
+        { "amount": 5, "unit": "TBSP", "item": "taco seasoning" },
+        { "amount": 16, "unit": "oz", "item": "fusilli pasta" },
+        { "amount": 1, "unit": "each", "item": "red onion" },
+        { "amount": 0.5, "unit": "bunch", "item": "cilantro" },
+        { "amount": 30, "unit": "oz", "item": "sweet corn" },
+        { "amount": 1, "unit": "dashes", "item": "cotija cheese" },
+        { "amount": 1, "unit": "cup", "item": "sour cream" },        
+        { "amount": 1, "unit": "cup", "item": "mayo" },
+        { "amount": 1, "unit": "dashes", "item": "tajin" },
+        { "amount": 1, "unit": "each", "item": "lime" },
+        { "amount": 1, "unit": "dashes", "item": "honey" },
+        { "amount": 2, "unit": "TBSP", "item": "taco seasoning" }
+      ]
     }
   ],
 
@@ -41,6 +80,22 @@
         { "amount": 32, "unit": "oz", "item": "tator tots" },
         { "amount": 10.75, "unit": "oz", "item": "condensed cream of chicken soup" },
         { "amount": 16, "unit": "oz", "item": "sour cream" }
+      ]
+    },
+        {
+      "name": "Hawaiian Roll Sliders",
+      "url": "recipes/hawaiian-roll-sliders.html",
+      "ingredients": [
+        { "amount": 2, "unit": "TBSP", "item": "olive oil" },
+        { "amount": 1, "unit": "each", "item": "onion" },
+        { "amount": 1, "unit": "dashes", "item": "salt" },
+        { "amount": 4, "unit": "TBSP", "item": "unsalted butter" },
+        { "amount": 1, "unit": "tsp", "item": "poppy seeds" },
+        { "amount": 0.5, "unit": "tsp", "item": "worcestershire sauce" },
+        { "amount": 2, "unit": "cloves", "item": "garlic" },
+        { "amount": 12, "unit": "each", "item": "hawaiian rolls" },
+        { "amount": 2, "unit": "LBS", "item": "sliced ham" },
+        { "amount": 1, "unit": "LBS", "item": "swiss cheese" }
       ]
     }
   ],
@@ -107,6 +162,41 @@
         { "amount": 0.75, "unit": "each", "item": "green onion" }
       ]
     },
+        {
+      "name": "Garlic Chicken",
+      "url": "recipes/garlic-chicken.html",
+      "ingredients": [
+        { "amount": 2, "unit": "LBS", "item": "chicken" },
+        { "amount": 5, "unit": "clove", "item": "garlic" },
+        { "amount": 0.5, "unit": "cup", "item": "liquid aminos" },
+        { "amount": 2, "unit": "TBSP", "item": "toasted sesame oil" },
+        { "amount": 4, "unit": "TBSP", "item": "honey" },
+        { "amount": 1, "unit": "TBSP", "item": "cornstarch" },
+        { "amount": 5, "unit": "each", "item": "green onion" },
+        { "amount": 1, "unit": "each", "item": "water chesnuts" },
+        { "amount": 1, "unit": "each", "item": "frozen broccoli" },
+        { "amount": 1, "unit": "each", "item": "frozen cauliflower" },
+        { "amount": 0.5, "unit": "each", "item": "frozen peas and carrots" },
+        { "amount": 2, "unit": "each", "item": "eggs" },
+        { "amount": 1, "unit": "dashes", "item": "salt" },
+        { "amount": 1, "unit": "dashes", "item": "pepper" },
+        { "amount": 1, "unit": "dashes", "item": "sesame seeds" }
+      ]
+    },
+        {
+      "name": "Egg Roll in a Bowl",
+      "url": "recipes/egg-roll-in-a-bowl.html",
+      "ingredients": [
+        { "amount": 1, "unit": "tsp", "item": "toasted sesame oil" },
+        { "amount": 1, "unit": "LBS", "item": "ground beef or pork" },
+        { "amount": 2, "unit": "each", "item": "bag coleslaw mix" },
+        { "amount": 2, "unit": "TBSP", "item": "liquid aminos" },
+        { "amount": 1, "unit": "TBSP", "item": "ground ginger" },
+        { "amount": 1, "unit": "tsp", "item": "garlic powder" },
+        { "amount": 4, "unit": "each", "item": "green onion" },
+        { "amount": 1, "unit": "tsp", "item": "red pepper flakes" }
+      ]
+    },
     {
       "name": "Teriyaki Chicken Crispy Rice Salad",
       "url": "recipes/teriyaki-chicken-crispy-rice-salad.html",
@@ -145,6 +235,73 @@
         { "amount": 2, "unit": "tsp", "item": "liquid smoke" },
         { "amount": 0.5, "unit": "tsp", "item": "garlic powder" },
         { "amount": 32, "unit": "oz", "item": "frozen meatballs" }
+      ]
+    },
+        {
+      "name": "Crockpot Meatballs",
+      "url": "recipes/crockpot-meatballs.html",
+      "ingredients": [
+        { "amount": 44, "unit": "oz", "item": "frozen meatballs" },
+        { "amount": 56, "unit": "oz", "item": "Cookies BBQ Sauce" },
+        { "amount": 2, "unit": "TBSP", "item": "unsalted butter" },
+        { "amount": 1, "unit": "tsp", "item": "garlic salt" },
+        { "amount": 1, "unit": "tsp", "item": "Mrs. Dash" },
+        { "amount": 2, "unit": "TBSP", "item": "light brown sugar" },
+        { "amount": 1, "unit": "each", "item": "gluten-free beer" },
+        { "amount": 2, "unit": "TBSP", "item": "Tabasco sauce" },
+        { "amount": 1, "unit": "each", "item": "shot whiskey" },
+        { "amount": 0.5, "unit": "tsp", "item": "habanero tabasco sauce" }
+      ]
+    },
+        {
+      "name": "Million Dollar Spaghetti",
+      "url": "recipes/million-dollar-spaghetti.html",
+      "ingredients": [
+        { "amount": 1, "unit": "LBS", "item": "ground beef" },
+        { "amount": 32, "unit": "oz", "item": "spaghetti sauce" },
+        { "amount": 8, "unit": "oz", "item": "cream cheese" },
+        { "amount": 0.25, "unit": "cup", "item": "sour cream" },
+        { "amount": 8, "unit": "TBSP", "item": "unsalted butter" },
+        { "amount": 16, "unit": "oz", "item": "spaghetti noodles" },
+        { "amount": 1, "unit": "cup", "item": "cottage cheese" },
+        { "amount": 2, "unit": "cup", "item": "mozzarella cheese" },
+        { "amount": 1, "unit": "dashes", "item": "salt" },
+        { "amount": 1, "unit": "dashes", "item": "pepper" },
+        { "amount": 1, "unit": "TBSP", "item": "italian seasoning" },
+        { "amount": 2, "unit": "tsp", "item": "garlic powder" },
+        { "amount": 2, "unit": "tsp", "item": "minced onion" }
+      ]
+    },
+        {
+      "name": "Low Carb Chicken Spaghetti",
+      "url": "recipes/low-carb-chicken-spaghetti.html",
+      "ingredients": [
+        { "amount": 2, "unit": "each", "item": "spaghetti squash" },
+        { "amount": 0.25, "unit": "cup", "item": "olive oil" },
+        { "amount": 1, "unit": "dashes", "item": "salt" },
+        { "amount": 1, "unit": "dashes", "item": "pepper" },
+        { "amount": 8, "unit": "oz", "item": "cream cheese" },
+        { "amount": 1, "unit": "cup", "item": "sour cream" },
+        { "amount": 2, "unit": "LBS", "item": "chicken" },
+        { "amount": 28, "unit": "oz", "item": "diced tomatoes" },
+        { "amount": 2, "unit": "tsp", "item": "garlic powder" },
+        { "amount": 2, "unit": "cup", "item": "cheddar cheese" }
+      ]
+    },
+        {
+      "name": "Chicken Tetrazzini",
+      "url": "recipes/chicken-tetrazzini.html",
+      "ingredients": [
+        { "amount": 16, "unit": "oz", "item": "angel hair pasta" },
+        { "amount": 0.5, "unit": "cup", "item": "unsalted butter" },
+        { "amount": 2, "unit": "LBS", "item": "chicken" },
+        { "amount": 21, "unit": "oz", "item": "condensed cream of chicken soup" },
+        { "amount": 2, "unit": "cup", "item": "sour cream" },
+        { "amount": 1, "unit": "dashes", "item": "salt" },
+        { "amount": 1, "unit": "dashes", "item": "pepper" },
+        { "amount": 0.5, "unit": "cup", "item": "chicken broth" },
+        { "amount": 2, "unit": "cup", "item": "mozzarella cheese" },
+        { "amount": 2, "unit": "TBSP", "item": "parmesan cheese" }
       ]
     }
   ],
