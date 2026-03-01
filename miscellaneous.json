@@ -113,7 +113,7 @@
         ]
       },
       {
-        "name": "White Queso",
+        "name": "⭐ White Queso",
         "url": "recipes/white-queso.html",
         "ingredients": [
           { "amount": 1, "unit": "LBS", "item": "white american cheese" },
@@ -139,7 +139,7 @@
         ]
       },
             {
-        "name": "Honey Mustard",
+        "name": "⭐ Honey Mustard",
         "url": "recipes/honey-mustard.html",
               "ingredients": [
           { "amount": 0.5, "unit": "cup", "item": "mayo" },
@@ -201,7 +201,7 @@
 
     "Breads": [
       {
-        "name": "Banana Bread Grandma Peggy",
+        "name": "⭐ Banana Bread Grandma Peggy",
         "url": "recipes/banana-bread-grandma-peggy.html",
         "ingredients": [
           { "amount": 0.75, "unit": "cup", "item": "butter" },
