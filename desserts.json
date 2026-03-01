@@ -164,6 +164,26 @@
         ]
       },
         {
+        "name": "Oreo Fluff - Keto",
+        "url": "recipes/oreo-fluff-keto.html",
+        "ingredients": [
+          { "amount": 8, "unit": "oz", "item": "sugar-free cool whip" },
+          { "amount": 4, "unit": "oz", "item": "sugar-free instant vanilla pudding mix" },
+          { "amount": 2, "unit": "oz", "item": "highkey double chocolate brownie cookies" }
+        ]
+      },
+        {
+        "name": "Oreo Fluff - Daisy Jones",
+        "url": "recipes/oreo-fluff.html",
+        "ingredients": [
+          { "amount": 4, "unit": "oz", "item": "cream cheese" },
+          { "amount": 1.5, "unit": "cup", "item": "milk" },
+          { "amount": 3.5, "unit": "oz", "item": "instant vanilla pudding" },
+          { "amount": 24, "unit": "each", "item": "oreos" },
+          { "amount": 16, "unit": "oz", "item": "cool whip" }
+        ]
+      },
+        {
         "name": "Everything Bagel Seasoning",
         "url": "recipes/everything-bagel-seasoning.html",
         "ingredients": [
