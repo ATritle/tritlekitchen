@@ -47,6 +47,11 @@
   <select id="recipe" disabled>
     <option value="">Choose Recipe</option>
   </select>
+
+  <!-- All Recipes Dropdown -->
+<select id="recipeSelect">
+  <option value="">All Recipes</option>
+</select>
   
   <!-- 🔎 Recipe Name Search -->
 <div class="search-wrapper">
@@ -108,6 +113,8 @@
       const main = document.getElementById("mainCategory");
       const sub = document.getElementById("subCategory");
       const recipe = document.getElementById("recipe");
+      const recipeSelect = document.getElementById("recipeSelect");
+      const allRecipes = [];
 
 Object.keys(data)
   .sort((a, b) => a.localeCompare(b))
@@ -172,6 +179,28 @@ recipe.addEventListener("change", () => {
   }
 });
 
+      // Build flattened recipe list
+Object.values(data).forEach(category =>
+  Object.values(category).forEach(subCat =>
+    subCat.forEach(recipe => allRecipes.push(recipe))
+  )
+);
+
+// Sort alphabetically
+allRecipes.sort((a, b) => a.name.localeCompare(b.name));
+
+// Populate All Recipes dropdown
+allRecipes.forEach(r => {
+  recipeSelect.add(new Option(r.name, r.url));
+});
+
+// Navigate when selected
+recipeSelect.addEventListener("change", () => {
+  if (recipeSelect.value) {
+    window.location.href = recipeSelect.value;
+  }
+});
+      
             setupSearch(data);
 
     }
@@ -422,6 +451,7 @@ function closeModal() {
   
 </body>
 </html>
+
 
 
 
