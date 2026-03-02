@@ -189,6 +189,13 @@ Object.values(data).forEach(category =>
 // Sort alphabetically
 allRecipes.sort((a, b) => a.name.localeCompare(b.name));
 
+// Sort alphabetically
+allRecipes.sort((a, b) => a.name.localeCompare(b.name));
+
+// Update dropdown label with count
+recipeSelect.options[0].textContent = 
+  `All Recipes (${allRecipes.length})`;
+
 // Populate All Recipes dropdown
 allRecipes.forEach(r => {
   recipeSelect.add(new Option(r.name, r.url));
@@ -451,6 +458,7 @@ function closeModal() {
   
 </body>
 </html>
+
 
 
 
