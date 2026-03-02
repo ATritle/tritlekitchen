@@ -231,7 +231,7 @@ allRecipes
     const offsetY = 15;
 
     function showPreview(x, y) {
-      if (!r.thumbnail) return;
+      if (!preview) return;
 
       preview.innerHTML =
         "<img src='" + r.thumbnail + "' alt='" + r.name + "'>" +
@@ -250,6 +250,7 @@ allRecipes
     }
 
     function hidePreview() {
+      if (!preview) return;
       preview.classList.remove("show");
       setTimeout(function () {
         preview.classList.add("hidden");
@@ -420,5 +421,6 @@ function closeModal() {
   
 </body>
 </html>
+
 
 
