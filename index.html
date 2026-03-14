@@ -78,12 +78,19 @@
 
 <div class="app-description">
   <p>Choose a category, select a recipe, or use search to quickly find what you want to cook.</p>
-  <p>Built for tablet use in the kitchen, with simple navigation and easy-to-read layouts.</p>
-  <p>
-  <a href="meal-planner.html" class="accent-button">
-  GO TO MEAL PLANNER ->
-  </a>
-  </p>
+<p>Built for tablet use in the kitchen, with simple navigation and easy-to-read layouts.</p>
+
+<p>
+<a href="#" id="openSubmitModal" class="accent-button">
+SUBMIT A RECIPE →
+</a>
+</p>
+
+<p>
+<a href="meal-planner.html" class="accent-button">
+GO TO MEAL PLANNER →
+</a>
+</p>
 </div>
   
 <div class="button-wrapper">
@@ -454,7 +461,66 @@ function closeModal() {
   localStorage.setItem("modalVersionSeen", MODAL_VERSION);
 }
 </script>
-  
+
+<script>
+const submitModal = document.getElementById("submitModal");
+const openSubmitBtn = document.getElementById("openSubmitModal");
+
+openSubmitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  submitModal.classList.remove("hidden");
+  setTimeout(() => {
+    submitModal.classList.add("show");
+  }, 10);
+});
+
+function closeSubmitModal() {
+  submitModal.classList.remove("show");
+  setTimeout(() => {
+    submitModal.classList.add("hidden");
+  }, 300);
+}
+
+function sendRecipeEmail() {
+  const subject = document.getElementById("recipeSubject").value.trim();
+  const body = document.getElementById("recipeBody").value.trim();
+
+  if (!subject || !body) {
+    alert("Please fill out both fields.");
+    return;
+  }
+
+  const email = "tritle.aaron@gmail.com"; // 🔥 CHANGE THIS
+
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.location.href = mailtoLink;
+
+  closeSubmitModal();
+}
+</script>
+
+<div id="submitModal" class="modal-overlay hidden">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeSubmitModal()">×</button>
+    <h2>Submit a Recipe</h2>
+
+    <input type="text" id="recipeSubject" placeholder="Recipe Name" style="width:100%; margin-bottom:12px; padding:10px; border-radius:8px;">
+
+    <textarea id="recipeBody" 
+      placeholder="Ingredients:
+
+Instructions:"
+      style="width:100%; height:200px; padding:10px; border-radius:8px;"></textarea>
+
+    <div style="text-align:center; margin-top:15px;">
+      <button onclick="sendRecipeEmail()" class="accent-button">
+        SEND RECIPE
+      </button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
 
