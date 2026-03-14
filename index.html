@@ -740,7 +740,7 @@ reader.onload = function(event) {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
 
-const MAX_WIDTH = 800;
+const MAX_WIDTH = 400;
 
 let width = img.width;
 let height = img.height;
@@ -756,7 +756,7 @@ canvas.height = height;
 
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-    const compressed = canvas.toDataURL("image/jpeg", 0.7);
+    const compressed = canvas.toDataURL("image/jpeg", 0.3);
 
     const base64 = compressed.split(",")[1];
 
