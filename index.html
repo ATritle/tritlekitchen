@@ -670,7 +670,7 @@ const recipeName = document.getElementById("recipeSubject").value;
 const recipeBody = document.getElementById("recipeBody").value;
 const photoInput = document.getElementById("recipePhoto");
 
-function sendEmail(base64Image){
+function sendEmail(photoUrl){
 
 emailjs.send(
 "service_tritlekitchen",
@@ -678,7 +678,7 @@ emailjs.send(
 {
 recipe_name: recipeName,
 recipe_body: recipeBody,
-recipe_photo: base64Image
+recipe_photo: photoUrl
 }
 )
 .then(function(){
@@ -717,56 +717,41 @@ closeSubmitModal();
 .catch(function(error){
 
 console.error("EmailJS Error:", error);
-
 alert("Failed to send recipe.");
 
 });
 
 }
 
+/* ---------- CLOUDINARY IMAGE UPLOAD ---------- */
+
 if(photoInput.files.length > 0){
 
 const file = photoInput.files[0];
 
-const img = new Image();
-const reader = new FileReader();
+const formData = new FormData();
+formData.append("file", file);
+formData.append("upload_preset", "tritle_recipes");
 
-reader.onload = function(event) {
+fetch("https://api.cloudinary.com/v1_1/tritlekitchen/image/upload", {
+  method: "POST",
+  body: formData
+})
+.then(res => res.json())
+.then(data => {
 
-  img.src = event.target.result;
+  const imageUrl = data.secure_url;
 
-  img.onload = function() {
+  sendEmail(imageUrl);
 
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
+})
+.catch(err => {
 
-const MAX_WIDTH = 400;
+  console.error("Cloudinary upload failed:", err);
 
-let width = img.width;
-let height = img.height;
+  sendEmail(null);
 
-if (width > MAX_WIDTH) {
-  const scale = MAX_WIDTH / width;
-  width = MAX_WIDTH;
-  height = height * scale;
-}
-
-canvas.width = width;
-canvas.height = height;
-
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-
-    const compressed = canvas.toDataURL("image/jpeg", 0.3);
-
-    const base64 = compressed.split(",")[1];
-
-    sendEmail(base64);
-
-  };
-
-};
-
-reader.readAsDataURL(file);
+});
 
 }
 else{
