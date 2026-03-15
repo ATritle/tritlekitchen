@@ -182,7 +182,8 @@ document.getElementById("recipeSearch").value = "";
 
 recipe.addEventListener("change", () => {
   if (recipe.value) {
-    window.location.href = recipe.value;
+    window.open(recipe.value, "_blank");
+    recipe.value = "";
   }
 });
 
@@ -208,7 +209,8 @@ allRecipes.forEach(r => {
 // Navigate when selected
 recipeSelect.addEventListener("change", () => {
   if (recipeSelect.value) {
-    window.location.href = recipeSelect.value;
+    window.open(recipeSelect.value, "_blank");
+    recipeSelect.value = "";
   }
 });
       
