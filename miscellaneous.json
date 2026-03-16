@@ -88,6 +88,17 @@
         ]
       },
           {
+        "name": "Pickle Wrap Dip",
+        "url": "recipes/pickle-wrap-dip.html",
+        "ingredients": [
+          { "amount": 1, "unit": "LBS", "item": "dried beef" },
+          { "amount": 2, "unit": "cup", "item": "sour cream" },
+          { "amount": 16, "unit": "oz", "item": "cream cheese" },
+          { "amount": 48, "unit": "oz", "item": "pickles" },
+          { "amount": 1, "unit": "each", "item": "crackers or chips" }
+        ]
+      },
+          {
         "name": "Mexican Corn Dip",
         "url": "recipes/mexican-corn-dip.html",
         "ingredients": [
@@ -110,6 +121,18 @@
           { "amount": 3, "unit": "TBSP", "item": "pumpkin pie spice" },
           { "amount": 1, "unit": "tsp", "item": "vanilla extract" },
           { "amount": 0.5, "unit": "tsp", "item": "ground ginger" }
+        ]
+      },
+           {
+        "name": "Pumpkin Pie Dip",
+        "url": "recipes/pumpkin-pie-dip.html",
+        "ingredients": [
+          { "amount": 1, "unit": "cup", "item": "cottage cheese" },
+          { "amount": 0.5, "unit": "cup", "item": "pumpkin puree" },
+          { "amount": 0.5, "unit": "tsp", "item": "vanilla extract" },
+          { "amount": 0.5, "unit": "tsp", "item": "pumpkin pie spice" },
+          { "amount": 1, "unit": "TBSP", "item": "maple syrup" },
+          { "amount": 1, "unit": "pinch", "item": "salt" }
         ]
       },
       {
@@ -263,6 +286,20 @@
         ]
       },
       {
+        "name": "Sweet Potatoes",
+        "url": "recipes/sweet-potatoes.html",
+        "ingredients": [
+          { "amount": 3, "unit": "each", "item": "sweet potatoes" },
+          { "amount": 3, "unit": "TBSP", "item": "olive oil" },
+          { "amount": 1, "unit": "dashes", "item": "salt" },
+          { "amount": 1, "unit": "dashes", "item": "pepper" },
+          { "amount": 0.5, "unit": "cup", "item": "bell peppers" },
+          { "amount": 0.5, "unit": "cup", "item": "onion" },
+          { "amount": 0.25, "unit": "cup", "item": "cinnamon" },
+          { "amount": 0.25, "unit": "cup", "item": "brown sugar" }
+        ]
+      },
+      {
         "name": "Ole Feller Beans",
         "url": "recipes/ole-feller-beans.html",
         "ingredients": [
@@ -281,6 +318,20 @@
           { "amount": 0.25, "unit": "cup", "item": "bbq sauce" },
           { "amount": 2, "unit": "TBSP", "item": "yellow mustard" },
           { "amount": 0.25, "unit": "tsp", "item": "pepper" }
+        ]
+      },
+      {
+        "name": "Pinto Beans",
+        "url": "recipes/pinto-beans.html",
+        "ingredients": [
+          { "amount": 50, "unit": "oz", "item": "pinto beans" },
+          { "amount": 1, "unit": "LBS", "item": "bacon" },
+          { "amount": 1, "unit": "each", "item": "onion" },
+          { "amount": 3, "unit": "each", "item": "roma tomatoes" },
+          { "amount": 1, "unit": "each", "item": "jalapenos" },
+          { "amount": 1, "unit": "bunch", "item": "cilantro" },
+          { "amount": 25, "unit": "oz", "item": "water" },
+          { "amount": 1, "unit": "each", "item": "queso fresco" }
         ]
       }
     ],
@@ -312,6 +363,19 @@
         ]
       },
             {
+        "name": "Caramel Popcorn Balls",
+        "url": "recipes/caramel-popcorn-balls.html",
+        "ingredients": [
+          { "amount": 14, "unit": "oz", "item": "sweetened condensed milk" },
+          { "amount": 1, "unit": "cup", "item": "light brown sugar" },
+          { "amount": 0.75, "unit": "cup", "item": "light corn syrup" },
+          { "amount": 0.125, "unit": "tsp", "item": "salt" },
+          { "amount": 0.25, "unit": "cup", "item": "butter" },
+          { "amount": 1, "unit": "tsp", "item": "vanilla extract" },
+          { "amount": 16, "unit": "cup", "item": "popped popcorn" }
+        ]
+      },
+            {
         "name": "Dry Brine",
         "url": "recipes/dry-brine.html",
         "ingredients": [
@@ -321,6 +385,43 @@
           { "amount": 0.25, "unit": "cup", "item": "unsalted butter" },
           { "amount": 1, "unit": "cup", "item": "water" },
           { "amount": 1, "unit": "each", "item": "whole turkey or chicken" }
+        ]
+      },
+            {
+        "name": "Protein Balls",
+        "url": "recipes/protein-balls.html",
+        "ingredients": [
+          { "amount": 1, "unit": "cup", "item": "rolled quick oats" },
+          { "amount": 1, "unit": "scoop", "item": "protein powder" },
+          { "amount": 0.5, "unit": "cup", "item": "peanut butter" },
+          { "amount": 0.25, "unit": "cup", "item": "honey" },
+          { "amount": 0.25, "unit": "cup", "item": "mini chocolate chips" }
+        ]
+      },
+            {
+        "name": "Puppy Chow",
+        "url": "recipes/puppy-chow.html",
+        "ingredients": [
+          { "amount": 1, "unit": "cup", "item": "peanut butter" },
+          { "amount": 12, "unit": "oz", "item": "chocolate chips" },
+          { "amount": 0.5, "unit": "cup", "item": "unsalted butter" },
+          { "amount": 10, "unit": "oz", "item": "crispix or rice chex" },
+          { "amount": 1, "unit": "LBS", "item": "powdered sugar" }
+        ]
+      },
+            {
+        "name": "Taco Seasoning",
+        "url": "recipes/taco-seasoning.html",
+        "ingredients": [
+          { "amount": 4, "unit": "TBSP", "item": "chili powder" },
+          { "amount": 1, "unit": "tsp", "item": "garlic powder" },
+          { "amount": 1, "unit": "tsp", "item": "onion powder" },
+          { "amount": 0.5, "unit": "tsp", "item": "red pepper flakes" },
+          { "amount": 1, "unit": "tsp", "item": "dried oregano" },
+          { "amount": 1, "unit": "tsp", "item": "paprika" },
+          { "amount": 4, "unit": "tsp", "item": "cumin" },
+          { "amount": 4, "unit": "tsp", "item": "salt" },
+          { "amount": 4, "unit": "tsp", "item": "pepper" }
         ]
       },
             {

@@ -184,6 +184,29 @@
         ]
       },
         {
+        "name": "Peanut Butter Cups",
+        "url": "recipes/peanut-butter-cups.html",
+        "ingredients": [
+          { "amount": 1, "unit": "cup", "item": "chocolate chips" },
+          { "amount": 1, "unit": "TBSP", "item": "coconut oil" },
+          { "amount": 0.5, "unit": "cup", "item": "peanut butter" },
+          { "amount": 0.25, "unit": "cup", "item": "honey" },
+          { "amount": 2, "unit": "TBSP", "item": "coconut oil" },
+          { "amount": 1, "unit": "pinch", "item": "sea salt" }
+        ]
+      },
+        {
+        "name": "Peanut Butter Frosting",
+        "url": "recipes/peanut-butter-frosting.html",
+        "ingredients": [
+          { "amount": 0.5, "unit": "cup", "item": "peanut butter" },
+          { "amount": 3, "unit": "TBSP", "item": "butter" },
+          { "amount": 2.5, "unit": "cup", "item": "powdered sugar" },
+          { "amount": 0.25, "unit": "cup", "item": "milk" },
+          { "amount": 2, "unit": "tsp", "item": "vanilla extract" }
+        ]
+      },
+        {
         "name": "Everything Bagel Seasoning",
         "url": "recipes/everything-bagel-seasoning.html",
         "ingredients": [

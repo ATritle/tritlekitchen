@@ -11,12 +11,37 @@
           { "amount": 0.5, "unit": "TBSP", "item": "honey" },
           { "amount": 2, "unit": "each", "item": "apples" }
         ]
+      },
+      {
+        "name": "⭐ Peach Pie Moonshine",
+        "url": "recipes/peach-pie-moonshine.html",
+        "ingredients": [
+          { "amount": 128, "unit": "oz", "item": "welch's white grape peach juice" },
+          { "amount": 15, "unit": "oz", "item": "sliced peaches - heavy syrup" },
+          { "amount": 15, "unit": "oz", "item": "sugar free sliced peaches" },
+          { "amount": 6, "unit": "each", "item": "cinnamon stick" },
+          { "amount": 750, "unit": "ml", "item": "peach scnapps" },
+          { "amount": 375, "unit": "ml", "item": "everclear" },
+          { "amount": 1.5, "unit": "cup", "item": "sugar" },
+          { "amount": 0.5, "unit": "cup", "item": "brown sugar" }
+        ]
       }
     ],
 "Non-Alcoholic": [
       
     ],
 "Shots": [
-      
+      {
+        "name": "Chocolate Pudding Shots",
+        "url": "recipes/chocolate-pudding-shots.html",
+        "ingredients": [
+          { "amount": 3.9, "unit": "oz", "item": "chocolate pudding" },
+          { "amount": 0.75, "unit": "cup", "item": "milk" },
+          { "amount": 0.25, "unit": "cup", "item": "cake vodka" },
+          { "amount": 0.5, "unit": "cup", "item": "irish cream" },
+          { "amount": 8, "unit": "oz", "item": "cool whip" },
+          { "amount": 2, "unit": "oz", "item": "plastic cups with lids" }
+        ]
+      }   
     ]
   }

@@ -14,6 +14,35 @@
           { "amount": 1, "unit": "dashes", "item": "cinnamon" },
           { "amount": 1, "unit": "dashes", "item": "nutmeg" }
         ]
+      },
+      {
+        "name": "Protein Pancakes",
+        "url": "recipes/protein-pancakes.html",
+        "ingredients": [
+          { "amount": 1, "unit": "each", "item": "banana" },
+          { "amount": 1, "unit": "scoop", "item": "protein powder" },
+          { "amount": 0.25, "unit": "cup", "item": "egg whites" },
+          { "amount": 0.5, "unit": "TBSP", "item": "almond milk" },
+          { "amount": 1, "unit": "tsp", "item": "cinnamon" },
+          { "amount": 2, "unit": "dashes", "item": "nutmeg" }
+        ]
+      },
+        {
+        "name": "Puff French Toast",
+        "url": "recipes/puff-french-toast.html", 
+        "ingredients": [
+          { "amount": 2, "unit": "each", "item": "egg" },
+          { "amount": 2.5, "unit": "TBSP", "item": "sugar" },
+          { "amount": 0.5, "unit": "tsp", "item": "salt" },
+          { "amount": 0.5, "unit": "tsp", "item": "vanilla extract" },
+          { "amount": 1, "unit": "dashes", "item": "cinnamon" },
+          { "amount": 2, "unit": "cup", "item": "milk" },
+          { "amount": 1, "unit": "cup", "item": "flour" },
+          { "amount": 2.5, "unit": "tsp", "item": "baking powder" },
+          { "amount": 1, "unit": "each", "item": "avocado or vegetable oil" },
+          { "amount": 1, "unit": "each", "item": "thick sliced bread" },
+          { "amount": 1, "unit": "each", "item": "maple syrup" }
+        ]
       }
     ],
 
