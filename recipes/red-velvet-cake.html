@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Velvet Cake</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f0f;
+      color: #f2f2f2;
+
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Title */
+    .recipe-title {
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 6px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      color: #e8f1ff;
+
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Sub Title */
+    .recipe-subtitle {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #e8f1ff;
+  opacity: 0.85; /* optional softer look */
+}
+    /* Sub Title if None */
+    .recipe-subtitle:empty {
+  display: none;
+}
+    
+    /* Horizontal rule under title */
+    .title-rule {
+      border: none;
+      border-top: 2px solid #444;
+      margin: 10px 0 30px;
+    }
+
+    /* Two-column layout */
+    .recipe-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 40px;
+      position: relative;
+    }
+
+    /* Vertical divider */
+    .recipe-content::before {
+      content: "";
+      position: absolute;
+      left: calc(33.33% + 20px);
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #444;
+    }
+
+    /* Section headers */
+    h2 {
+      font-style: italic;
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #cfcfcf;
+    }
+
+    /* Ingredients list */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    /* Directions list */
+    ol {
+      padding-left: 22px;
+      margin: 0;
+
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    ol li {
+      margin-bottom: 8px;
+    }
+
+    /* ===== Download Recipe Link ===== */
+.download-recipe {
+  margin: 40px auto 20px;
+  text-align: center;
+}
+
+.download-recipe a {
+  display: inline-block;   /* important */
+  font-size: 18px;
+  color: #0a84ff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+}
+
+/* ===== Recipe Image ===== */
+.recipe-image-wrapper {
+  text-align: center;
+  margin: 50px 0 20px;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 200px;      /* Perfect size for iPhone */
+  border-radius: 20px;   /* Rounded edges */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Scale up nicely on larger screens */
+@media (min-width: 768px) {
+  .recipe-image {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recipe-image {
+    max-width: 500px;
+  }
+}
+    
+  /* ===== Print styles (PDF / Printer) ===== */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .recipe-title {
+    color: #000000 !important;
+    text-shadow: none !important;
+  }
+
+  h2 {
+    color: #000000 !important;
+  }
+
+  ul,
+  ol {
+    color: #000000 !important;
+  }
+
+  .title-rule {
+    border-color: #000000 !important;
+  }
+
+  .recipe-content::before {
+    background: #000000 !important;
+  }
+
+  .download-recipe {
+    display: none;
+  }
+}  
+  </style>
+</head>
+<body>
+
+  <div class="recipe-title">
+    Red Velvet Cake
+  </div>
+
+  <div class="recipe-subtitle">
+    thegratefulgirlcooks.com
+  </div>
+  
+  <hr class="title-rule">
+
+  <div class="recipe-content">
+
+    <!-- Ingredients -->
+    <section>
+      <h2>Ingredients:</h2>
+      <ul>
+        <li><strong>Cake:</strong></li>
+        <li>1 1/2 cups sugar</li>
+        <li>1/2 cup Crisco</li>
+        <li>2 oz red food coloring</li>
+        <li>2 eggs - room temperature</li>
+        <li>2 cups flour - sifted</li>
+        <li>1 tsp salt</li>
+        <li>2 TBSP unsweetened cocoa powder</li>
+        <li>1 cup buttermilk</li>
+        <li>1 tsp baking soda</li>
+        <li>1 TBSP vanilla extract</li>
+        <li>1 TBSP white vinegar</li>
+        <li><strong>Frosting:</strong></li>
+        <li>1 cup milk</li>
+        <li>1 1/2 TBSP cornstarch</li>
+        <li>pinch salt</li>
+        <li>1/2 cup Crisco</li>
+        <li>1/2 cup butter - softened</li>
+        <li>2/3 cup sugar</li>
+        <li>1 2/3 cups powdered sugar - divided</li>
+        <li>1 tsp vanilla extract</li>
+      </ul>
+    </section>
+
+    <!-- Directions -->
+    <section>
+      <h2>Directions:</h2>
+      <ol>
+  <li>Preheat the oven to 350°F and grease two 9-inch round cake pans or one 9x13-inch pan.</li>
+  <li>Using an electric mixer or stand mixer, cream the sugar and Crisco together until well combined. Add the red food coloring and eggs.</li>
+  <li>Continue mixing until the batter is deep red in color and creamy in texture.</li>
+  <li>In a separate bowl, whisk the flour, salt, and cocoa powder until well combined. Add this to the batter and mix on low speed until fully incorporated.</li>
+  <li>In another bowl, combine the buttermilk and baking soda. Fold the mixture into the cake batter.</li>
+  <li>Stir in the vanilla and vinegar until combined.</li>
+  <li>If using two round cake pans, divide the batter evenly between the pans.</li>
+  <li>Pour the batter into the prepared pan(s) and bake on the middle rack for about 25 minutes, or until a toothpick inserted into the center comes out clean. Transfer pans to a wire rack to cool.</li>
+  <li>While the cake is baking, add the milk, cornstarch, and salt to a medium saucepan over low heat, stirring often until the mixture thickens.</li>
+  <li>Remove the pan from the heat and set aside to cool.</li>
+  <li>In a separate bowl or stand mixer, combine the Crisco, butter, sugar, and ⅔ cup powdered sugar. Beat for about 15 minutes until the sugar dissolves and the mixture is light and fluffy.</li>
+  <li>Add the vanilla and the cooled milk mixture. Beat well, then add the remaining powdered sugar until fully combined.</li>
+  <li>Frost the cake once it has completely cooled. If using two round cake pans, remove the cakes by inverting the pans.</li>
+  <li>Place one cake layer on a serving plate and frost the top. Place the second cake layer on top.</li>
+  <li>Continue frosting the top and sides of the cake. <strong>Optional:</strong> Decorate the cake as desired.</li>
+      </ol>
+    </section>
+
+  </div>
+  
+<script src="../js/recipe-global.js"></script>
+  
+</body>
+
+</html>
+
+
+
+
+
+
