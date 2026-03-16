@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peach Pie Mooneshine</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0f0f0f;
+      color: #f2f2f2;
+
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Title */
+    .recipe-title {
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 6px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      color: #e8f1ff;
+
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Sub Title */
+    .recipe-subtitle {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #e8f1ff;
+  opacity: 0.85; /* optional softer look */
+}
+    /* Sub Title if None */
+    .recipe-subtitle:empty {
+  display: none;
+}
+    
+    /* Horizontal rule under title */
+    .title-rule {
+      border: none;
+      border-top: 2px solid #444;
+      margin: 10px 0 30px;
+    }
+
+    /* Two-column layout */
+    .recipe-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 40px;
+      position: relative;
+    }
+
+    /* Vertical divider */
+    .recipe-content::before {
+      content: "";
+      position: absolute;
+      left: calc(33.33% + 20px);
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #444;
+    }
+
+    /* Section headers */
+    h2 {
+      font-style: italic;
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #cfcfcf;
+    }
+
+    /* Ingredients list */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    /* Directions list */
+    ol {
+      padding-left: 22px;
+      margin: 0;
+
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0e0e0;
+    }
+
+    ol li {
+      margin-bottom: 8px;
+    }
+
+    /* ===== Download Recipe Link ===== */
+.download-recipe {
+  margin: 40px auto 20px;
+  text-align: center;
+}
+
+.download-recipe a {
+  display: inline-block;   /* important */
+  font-size: 18px;
+  color: #0a84ff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+}
+
+/* ===== Recipe Image ===== */
+.recipe-image-wrapper {
+  text-align: center;
+  margin: 50px 0 20px;
+}
+
+.recipe-image {
+  width: 100%;
+  max-width: 200px;      /* Perfect size for iPhone */
+  border-radius: 20px;   /* Rounded edges */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Scale up nicely on larger screens */
+@media (min-width: 768px) {
+  .recipe-image {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recipe-image {
+    max-width: 500px;
+  }
+}
+    
+  /* ===== Print styles (PDF / Printer) ===== */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .recipe-title {
+    color: #000000 !important;
+    text-shadow: none !important;
+  }
+
+  h2 {
+    color: #000000 !important;
+  }
+
+  ul,
+  ol {
+    color: #000000 !important;
+  }
+
+  .title-rule {
+    border-color: #000000 !important;
+  }
+
+  .recipe-content::before {
+    background: #000000 !important;
+  }
+
+  .download-recipe {
+    display: none;
+  }
+}  
+  </style>
+</head>
+<body>
+
+  <div class="recipe-title">
+    Peach Pie Moonshine
+  </div>
+
+  <div class="recipe-subtitle">
+    
+  </div>
+  
+  <hr class="title-rule">
+
+  <div class="recipe-content">
+
+    <!-- Ingredients -->
+    <section>
+      <h2>Ingredients:</h2>
+      <ul>
+<li>128 oz Welch's white grape peach juice</li>
+<li>15 oz can sliced peaches - heavy syrup</li>
+<li>15 oz can sugar-free sliced peaches</li>
+<li>6-7 cinnamon sticks</li>
+<li>750 ml peach schnapps</li>
+<li>375 ml Everclear</li>
+<li>1 1/2 cups sugar</li>
+<li>1/2 cup brown sugar - packed</li>
+      </ul>
+    </section>
+
+    <!-- Directions -->
+    <section>
+      <h2>Directions:</h2>
+      <ol>
+  <li>In a large stockpot, combine the juice, peaches, sugar, brown sugar, and cinnamon sticks. Bring to a boil.</li>
+  <li>Reduce heat and simmer for 30–60 minutes.</li>
+  <li>Remove the cinnamon sticks and allow the mixture to cool to room temperature.</li>
+  <li>Stir in the peach schnapps and Everclear.</li>
+  <li>Strain the mixture through cheesecloth to remove small pieces of peaches.</li>
+  <li>Ladle into jars and add 2–3 peach slices to each jar.</li>
+  <li>Yields approximately 12–14 pint mason jars.</li>
+      </ol>
+    </section>
+
+  </div>
+  
+<script src="../js/recipe-global.js"></script>
+  
+</body>
+
+</html>
+
+
+
+
+
+
