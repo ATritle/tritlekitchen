@@ -7,6 +7,11 @@ const CORE_ASSETS = [
   "./css/style.css",
   "./apple-touch-icon.png",
   "./favicon.png"
+  "./drinks.json",
+  "./dinner.json",
+  "./desserts.json",
+  "./breakfast.json",
+  "./miscellaneous.json"
 ];
 
 // INSTALL
