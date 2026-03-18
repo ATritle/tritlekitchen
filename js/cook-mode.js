@@ -15,10 +15,10 @@ if (toggle) {
   toggle.addEventListener("change", async () => {
     if (toggle.checked) {
       enableCookMode();
-      localStorage.setItem("cookMode", "true");
+      localStorage.setItem("cookMode", "false");
     } else {
       disableCookMode();
-      localStorage.setItem("cookMode", "false");
+      localStorage.setItem("cookMode", "true");
     }
   });
 
