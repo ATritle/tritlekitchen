@@ -553,3 +553,10 @@ input:checked + .slider {
 .download-recipe .accent-button {
   color: #ffffff !important;
 }
+
+@media print {
+  .cook-toggle,
+  .download-recipe {
+    display: none !important;
+  }
+}
