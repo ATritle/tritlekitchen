@@ -193,7 +193,7 @@ document.getElementById("recipeSearch").value = "";
 
 recipe.addEventListener("change", () => {
   if (recipe.value) {
-    window.open(recipe.value, "_blank");
+    window.location.href = recipe.value;
     recipe.value = "";
   }
 });
@@ -389,7 +389,7 @@ ingredientInput.addEventListener("input", () => {
     .forEach(recipe => {
       const li = document.createElement("li");
       li.textContent = recipe.name;
-      li.onclick = () => window.open(recipe.url, "_blank");
+      li.onclick = () => window.location.href = recipe.value;
       ingredientResults.appendChild(li);
     });
 });
