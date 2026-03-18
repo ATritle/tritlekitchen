@@ -45,7 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
     img.loading = "lazy";
 
     wrapper.appendChild(img);
-    recipeContent.after(wrapper);
+    const anchor = document.getElementById("recipeImageAnchor");
+
+if (anchor) {
+  anchor.replaceWith(wrapper);
+} else {
+  recipeContent.after(wrapper); // fallback
   }
 
   tryNextFormat(0);
