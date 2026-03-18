@@ -6,15 +6,42 @@ const toggle = document.getElementById("cookModeToggle");
 // If toggle doesn't exist on page, do nothing
 if (toggle) {
 
-toggle.checked = false;
+  // ===============================
+  // STATE HANDLING (SMART DEFAULT)
+  // ===============================
 
-toggle.addEventListener("change", async () => {
-  if (toggle.checked) {
-    enableCookMode();
+  const hasPreference = localStorage.getItem("cookMode") !== null;
+
+  if (!hasPreference) {
+    // First visit → default OFF
+    toggle.checked = false;
   } else {
-    disableCookMode();
+    // Returning user → restore saved state
+    const savedState = localStorage.getItem("cookMode") === "true";
+    toggle.checked = savedState;
+
+    if (savedState) {
+      enableCookMode();
+    }
   }
-});
+
+  // ===============================
+  // TOGGLE LISTENER
+  // ===============================
+
+  toggle.addEventListener("change", async () => {
+    if (toggle.checked) {
+      enableCookMode();
+      localStorage.setItem("cookMode", "true");
+    } else {
+      disableCookMode();
+      localStorage.setItem("cookMode", "false");
+    }
+  });
+
+  // ===============================
+  // ENABLE COOK MODE
+  // ===============================
 
   async function enableCookMode() {
     try {
@@ -32,6 +59,10 @@ toggle.addEventListener("change", async () => {
     }, 20000);
   }
 
+  // ===============================
+  // DISABLE COOK MODE
+  // ===============================
+
   async function disableCookMode() {
     if (wakeLock !== null) {
       await wakeLock.release();
@@ -41,7 +72,10 @@ toggle.addEventListener("change", async () => {
     clearInterval(fallbackInterval);
   }
 
-  // Reapply when returning to tab
+  // ===============================
+  // REAPPLY ON TAB RETURN
+  // ===============================
+
   document.addEventListener("visibilitychange", async () => {
     if (toggle.checked && document.visibilityState === "visible") {
       try {
@@ -51,4 +85,5 @@ toggle.addEventListener("change", async () => {
       } catch {}
     }
   });
+
 }
