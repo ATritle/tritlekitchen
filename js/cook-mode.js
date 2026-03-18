@@ -6,21 +6,15 @@ const toggle = document.getElementById("cookModeToggle");
 // If toggle doesn't exist on page, do nothing
 if (toggle) {
 
-  // 🔥 Load saved state
-  const savedState = localStorage.getItem("cookMode") === "true";
-  toggle.checked = savedState;
+toggle.checked = false;
 
-  if (savedState) enableCookMode();
-
-  toggle.addEventListener("change", async () => {
-    if (toggle.checked) {
-      enableCookMode();
-      localStorage.setItem("cookMode", "false");
-    } else {
-      disableCookMode();
-      localStorage.setItem("cookMode", "true");
-    }
-  });
+toggle.addEventListener("change", async () => {
+  if (toggle.checked) {
+    enableCookMode();
+  } else {
+    disableCookMode();
+  }
+});
 
   async function enableCookMode() {
     try {
