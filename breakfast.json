@@ -27,6 +27,13 @@
           { "amount": 2, "unit": "dashes", "item": "nutmeg" }
         ]
       },
+      {
+        "name": "Pancakes",
+        "url": "recipes/pancakes.html",
+        "ingredients": [
+          { "amount": 1, "unit": "each", "item": "NOTHING" }
+        ]
+      },
         {
         "name": "Puff French Toast",
         "url": "recipes/puff-french-toast.html", 
