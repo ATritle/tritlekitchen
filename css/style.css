@@ -192,11 +192,6 @@ select:focus {
   transition: opacity 0.2s ease;
 }
 
-/* Recipe Image */
-.recipe-image {
-  max-width: 50px;
-}
-
 /* ===== Search Wrapper ===== */
 .search-wrapper {
   position: relative;
@@ -553,4 +548,8 @@ input:checked + .slider::before {
 /* Optional glow when ON */
 input:checked + .slider {
   box-shadow: 0 0 10px rgba(46, 204, 113, 0.6);
+}
+
+.download-recipe .accent-button {
+  color: #ffffff !important;
 }
