@@ -1,11 +1,5 @@
-// ===============================
-// AUTO-INJECT RECIPE IMAGE
-// Supports .jpg and .png
-// ===============================
-
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Only run on recipe pages
   if (!window.location.pathname.includes("/recipes/")) return;
 
   const fileName = window.location.pathname.split("/").pop();
@@ -15,11 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const recipeContent = document.querySelector(".recipe-content");
   if (!recipeContent) return;
 
-  // Possible image formats (order matters — jpg first)
+  // ===============================
+  // IMAGE INJECTION
+  // ===============================
+
   const formats = ["jpg", "png"];
 
   function tryNextFormat(index) {
-    if (index >= formats.length) return; // No image found
+    if (index >= formats.length) return;
 
     const imagePath = `/images/${baseName}.${formats[index]}`;
     const testImg = new Image();
@@ -45,50 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
     img.loading = "lazy";
 
     wrapper.appendChild(img);
+
     const anchor = document.getElementById("recipeImageAnchor");
 
-if (anchor) {
-  anchor.replaceWith(wrapper);
-} else {
-  recipeContent.after(wrapper); // fallback
+    if (anchor) {
+      anchor.replaceWith(wrapper);
+    } else {
+      recipeContent.after(wrapper);
+    }
   }
 
   tryNextFormat(0);
 
-});
+  // ===============================
+  // PDF DOWNLOAD BUTTON
+  // ===============================
 
-// ===============================
-// DOWNLOAD PDF LINK
-// ===============================
+  const pageName = fileName.replace(".html", ".pdf");
 
-document.addEventListener("DOMContentLoaded", () => {
-
-  // Only run on recipe pages
-  if (!window.location.pathname.includes("/recipes/")) return;
-
-  // 🔥 Auto-set PDF download link
-  const downloadLink = document.getElementById("downloadLink");
-
-  if (downloadLink) {
-    const pageName = window.location.pathname
-      .split("/")
-      .pop()
-      .replace(".html", ".pdf");
-
-    downloadLink.href = "../pdfs/" + pageName;
-  }
-
-});
-document.addEventListener("DOMContentLoaded", () => {
-
-  if (!window.location.pathname.includes("/recipes/")) return;
-
-  const pageName = window.location.pathname
-    .split("/")
-    .pop()
-    .replace(".html", ".pdf");
-
-  // Create wrapper
   const wrapper = document.createElement("div");
   wrapper.className = "download-recipe";
 
@@ -99,7 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   wrapper.appendChild(link);
 
-  // Insert at bottom of page
-  document.body.appendChild(wrapper);
+  const anchor = document.getElementById("downloadAnchor");
+
+  if (anchor) {
+    anchor.replaceWith(wrapper);
+  } else {
+    document.body.appendChild(wrapper);
+  }
 
 });
