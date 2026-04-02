@@ -12,6 +12,20 @@
           { "amount": 8, "unit": "each", "item": "banana" },
           { "amount": 48, "unit": "each", "item": "chessmen cookies" }
         ]
+      },
+        {
+        "name": "Strawberry Rhubarb Crisp",
+        "url": "recipes/strawberry-rhubarb-crisp.html",
+        "ingredients": [
+          { "amount": 1, "unit": "cup", "item": "sugar" },
+          { "amount": 3, "unit": "TBSP", "item": "oat flour" },
+          { "amount": 3, "unit": "cup", "item": "strawberries" },
+          { "amount": 3, "unit": "cup", "item": "rhubarb" },
+          { "amount": 1.5, "unit": "cup", "item": "oat flour" },
+          { "amount": 1, "unit": "cup", "item": "brown sugar" },
+          { "amount": 1, "unit": "cup", "item": "unsalted butter" },
+          { "amount": 1, "unit": "cup", "item": "rolled quick oats" }
+        ]
       }
     ],
         "Cake": [
@@ -68,7 +82,20 @@
           { "amount": 1, "unit": "each", "item": "pecan or walnuts" }
         ]
       },
-    {
+        {
+        "name": "Strawberry Banana Poke Cake",
+        "url": "recipes/strawberry-banana-poke-cake.html",
+        "ingredients": [
+          { "amount": 21.5, "unit": "oz", "item": "all butter pound cake" },
+          { "amount": 3, "unit": "oz", "item": "strawberry jell-o" },
+          { "amount": 1, "unit": "each", "item": "strawberries" },
+          { "amount": 5, "unit": "each", "item": "banana" },
+          { "amount": 3.4, "unit": "oz", "item": "instant vanilla pudding" },
+          { "amount": 2, "unit": "cup", "item": "milk" },
+          { "amount": 8, "unit": "oz", "item": "cool whip" }
+        ]
+      },
+        {
         "name": "Better Than Sex Cake",
         "url": "recipes/better-than-sex-cake.html",
         "ingredients": [
