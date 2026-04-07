@@ -192,9 +192,9 @@ document.getElementById("recipeSearch").value = "";
       });
 
 recipe.addEventListener("change", () => {
-  if (recipe.value) {
-    window.location.href = recipe.value;
-    recipe.value = "";
+  if (recipe.url) {
+    window.location.href = recipe.url;
+    recipe.url = "";
   }
 });
 
@@ -217,12 +217,25 @@ allRecipes.forEach(r => {
   recipeSelect.add(new Option(r.name, r.url));
 });
 
-// Navigate when selected
-recipeSelect.addEventListener("change", () => {
-  if (recipeSelect.value) {
-    window.open(recipeSelect.value, "_blank");
-    recipeSelect.value = "";
+// Navigate when selected (MOBILE SAFE)
+let navigated = false;
+
+function goToRecipe() {
+  if (!navigated && recipeSelect.value) {
+    navigated = true;
+
+    window.location.href = recipeSelect.value;
+
+    setTimeout(() => {
+      navigated = false;
+      recipeSelect.value = "";
+    }, 500);
   }
+}
+
+recipeSelect.addEventListener("change", goToRecipe);
+recipeSelect.addEventListener("blur", goToRecipe);
+
 });
       
             setupSearch(data);
@@ -389,7 +402,7 @@ ingredientInput.addEventListener("input", () => {
     .forEach(recipe => {
       const li = document.createElement("li");
       li.textContent = recipe.name;
-      li.onclick = () => window.location.href = recipe.value;
+      li.onclick = () => window.location.href = recipe.url;
       ingredientResults.appendChild(li);
     });
 });
